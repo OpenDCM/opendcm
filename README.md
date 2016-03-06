@@ -1,3 +1,5 @@
 # opendcm
 Open DC multimeter
-Test
+This repository contain sources for building DC Multimeter.
+Project information can be found at :
+http://opendcm.blogspot.bg/
