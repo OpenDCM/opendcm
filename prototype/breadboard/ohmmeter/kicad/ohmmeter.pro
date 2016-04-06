@@ -1,4 +1,4 @@
-update=Wed 06 Apr 2016 18:51:47 EEST
+update=Wed 06 Apr 2016 18:49:58 EEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../../../kicad-lib
+LibDir=
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,4 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=opendcm
+LibName30=/tmp/opendcm/kicad-lib/opendcm
