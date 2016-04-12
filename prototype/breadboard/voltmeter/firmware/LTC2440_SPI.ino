@@ -13,9 +13,8 @@
 const byte cs_pin = 6;  // digital pin 27 for CS
 const byte busy_pin = 3;  // digital pin 18 for BUSY
 
-// Connect Pro micro to PC with RS232 to USB adapter and using cutecom program, a log file can be saved. 
-
 bool showDetailInfo = false;
+bool negativeValueDetected = false;
 
 bool adc_error = false;
 
@@ -44,17 +43,14 @@ void setup() {
 }
 
 // Macros for turn off/on
-//TXLED1; green LED on
-//TXLED0; green LED off
-//RXLED1; yellow LED on
-//RXLED0; yellow LED off
+//TXLED1; green LED off
+//TXLED0; green LED on
 
 void loop() {
 
-  // incoming serial 32-bit word from the ADC
-  unsigned long adc_out = 0;         
+  unsigned long adc_out = 0;         // incoming serial 32-bit word
 
-  // Turn off LED
+  //  TXLED0;
   RXLED0;
 
   // Check if ADC is BUSY (measurement is finished)
@@ -62,6 +58,7 @@ void loop() {
   if (is_busy == LOW)
   {
     // Turn on LED
+    //    TXLED1;
     RXLED1;
 
     adc_error = false;
@@ -74,10 +71,12 @@ void loop() {
       if (Serial1.available() != 0) {
         int cmd = Serial1.read();
         if (cmd == 100) {
-          // Disable showing detail info with "d"
+          // d for disable detail info
+          // Disable showing detail info
           showDetailInfo = false;
-        }else if (cmd = 101){
-          // Enable showing detail info with "e"
+        } else if (cmd == 101) {
+          // e for disable detail info
+          // Enable showing detail info
           showDetailInfo = true;
         }
 
@@ -94,13 +93,16 @@ void loop() {
 
       // Convert ADC code to voltage measurement
       float uVolts =  adc_out * 0.149011612;
-  
+
+      if (negativeValueDetected) {
+        Serial1.print("-");
+        uVolts = 2500000 - uVolts;
+      }
+
       if (showDetailInfo) {
         Serial1.print(uVolts);
         Serial1.print(" uV");
-      }else{
-	// Usefull for showing results direct in the gnuplot with the following command:
-	// plot '/tmp/cutecom.log' w lines
+      } else {
         Serial1.println(uVolts);
       }
 
@@ -111,17 +113,20 @@ void loop() {
         // The trick is to use uV and tp convert later into Volts.
         // For example : 2.5/16777216 = 0.000000149 for float
         // When the ADC code is 16777216, the result is 2.499805184. instead 2.5
-        // Using constant 0.149011612 will give 2500000.00(1032192) uV
+        // Using constant 0.149011612 will give 2500000.001032192 uV
 
         // convert uV to V
         String volts = convert_uV_to_V(uVolts);
 
         volts += String(" V");
         Serial1.print(", ");
+        if (negativeValueDetected) {
+          Serial1.print("-");
+        }
         Serial1.println(volts);
-        
+
       }
-    
+
       delay(1);
       // Start next measurement
       digitalWrite(cs_pin, HIGH);
@@ -158,11 +163,11 @@ unsigned long SpiRead(void) {
       adc_error = true;
       return (0);
     case 1:
-      Serial1.println("Negative voltage is detected.");
-      adc_error = true;
+      negativeValueDetected = true;
       break;
     case 2:
       // Positive signal within voltage reference
+      negativeValueDetected = false;
       break;
     case 3:
       Serial1.println("Input voltage is over the maximum allowed voltage reference.");
