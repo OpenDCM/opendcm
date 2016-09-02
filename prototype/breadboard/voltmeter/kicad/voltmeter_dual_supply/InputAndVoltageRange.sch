@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:opendcm
-LIBS:voltmeter_dual_supply-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -179,12 +178,12 @@ $EndComp
 $Comp
 L GND #PWR07
 U 1 1 57C9CE99
-P 3820 4480
-F 0 "#PWR07" H 3820 4230 50  0001 C CNN
-F 1 "GND" H 3820 4330 50  0000 C CNN
-F 2 "" H 3820 4480 50  0000 C CNN
-F 3 "" H 3820 4480 50  0000 C CNN
-	1    3820 4480
+P 3820 4580
+F 0 "#PWR07" H 3820 4330 50  0001 C CNN
+F 1 "GND" H 3820 4430 50  0000 C CNN
+F 2 "" H 3820 4580 50  0000 C CNN
+F 3 "" H 3820 4580 50  0000 C CNN
+	1    3820 4580
 	0    1    1    0   
 $EndComp
 $Comp
@@ -399,20 +398,32 @@ Text GLabel 6650 1950 2    60   Input ~ 0
 VoltageRangeTrigger
 Connection ~ 1850 3370
 Wire Wire Line
-	2900 3530 2900 3270
+	2900 3530 2900 3370
 Wire Wire Line
-	1560 3530 2900 3530
+	2900 3370 2900 3270
+Wire Wire Line
+	1560 3530 1850 3530
+Wire Wire Line
+	1850 3530 2320 3530
+Wire Wire Line
+	2320 3530 2900 3530
 Wire Wire Line
 	1850 3370 1880 3370
 Wire Wire Line
-	1850 3170 1850 3530
+	1850 3170 1850 3370
+Wire Wire Line
+	1850 3370 1850 3530
 Wire Wire Line
 	1850 3170 1880 3170
 Connection ~ 1810 3070
 Wire Wire Line
-	1560 3070 1880 3070
+	1560 3070 1810 3070
 Wire Wire Line
-	1810 2960 1810 3270
+	1810 3070 1880 3070
+Wire Wire Line
+	1810 2960 1810 3070
+Wire Wire Line
+	1810 3070 1810 3270
 Wire Wire Line
 	1810 3270 1880 3270
 Wire Wire Line
@@ -420,12 +431,16 @@ Wire Wire Line
 Wire Wire Line
 	6120 5600 6120 5330
 Wire Wire Line
-	3820 4480 3940 4480
+	3820 4580 3940 4580
 Wire Wire Line
 	6150 1590 6150 1410
 Connection ~ 6150 1950
 Wire Wire Line
-	6150 1890 6150 4440
+	6150 1890 6150 1950
+Wire Wire Line
+	6150 1950 6150 3200
+Wire Wire Line
+	6150 3200 6150 4440
 Wire Wire Line
 	5510 3500 5510 3580
 Wire Wire Line
@@ -435,20 +450,28 @@ Wire Wire Line
 Wire Wire Line
 	5500 2250 5500 2310
 Wire Wire Line
-	5900 1950 6650 1950
+	5900 1950 6150 1950
+Wire Wire Line
+	6150 1950 6650 1950
 Connection ~ 4990 3300
 Connection ~ 4990 4750
 Wire Wire Line
 	4990 3300 5110 3300
 Wire Wire Line
-	4990 1850 4990 4750
+	4990 1850 4990 3300
+Wire Wire Line
+	4990 3300 4990 4750
 Wire Wire Line
 	3080 5000 5690 5000
 Connection ~ 4910 4750
 Wire Wire Line
-	4910 4690 4910 4800
+	4910 4690 4910 4750
 Wire Wire Line
-	4910 4750 5690 4750
+	4910 4750 4910 4800
+Wire Wire Line
+	4910 4750 4990 4750
+Wire Wire Line
+	4990 4750 5690 4750
 Wire Wire Line
 	3820 4690 3940 4690
 Wire Wire Line
@@ -457,7 +480,9 @@ Wire Wire Line
 	4910 4800 4700 4800
 Connection ~ 3080 4800
 Wire Wire Line
-	2930 4800 3940 4800
+	2930 4800 3080 4800
+Wire Wire Line
+	3080 4800 3940 4800
 Wire Wire Line
 	2785 3170 2895 3170
 Wire Wire Line
@@ -467,7 +492,9 @@ Wire Wire Line
 Wire Wire Line
 	1522 3986 3080 3986
 Wire Wire Line
-	3080 3986 3080 5000
+	3080 3986 3080 4800
+Wire Wire Line
+	3080 4800 3080 5000
 Wire Wire Line
 	2785 3070 2895 3070
 Wire Wire Line
@@ -480,7 +507,11 @@ Wire Wire Line
 Wire Wire Line
 	2900 3370 2900 3365
 Wire Wire Line
-	3400 2050 3400 4110
+	3400 2050 3400 3000
+Wire Wire Line
+	3400 3000 3400 3220
+Wire Wire Line
+	3400 3220 3400 4110
 Wire Wire Line
 	4990 1850 5100 1850
 Wire Wire Line
@@ -492,12 +523,16 @@ Wire Wire Line
 	1560 3470 1560 3530
 Connection ~ 1850 3530
 Wire Wire Line
-	4680 3100 5110 3100
+	4680 3100 4820 3100
+Wire Wire Line
+	4820 3100 5110 3100
 Wire Wire Line
 	5910 3200 6150 3200
 Connection ~ 6150 3200
 Wire Wire Line
-	3800 3000 3880 3000
+	3800 3000 3840 3000
+Wire Wire Line
+	3840 3000 3880 3000
 Wire Wire Line
 	3840 3000 3840 2500
 Wire Wire Line
@@ -518,7 +553,9 @@ Wire Wire Line
 Wire Wire Line
 	3880 3200 3840 3200
 Wire Wire Line
-	3840 3200 3840 3910
+	3840 3200 3840 3890
+Wire Wire Line
+	3840 3890 3840 3910
 Wire Wire Line
 	3580 3220 3400 3220
 Connection ~ 3400 3220
@@ -540,7 +577,9 @@ Wire Wire Line
 Wire Wire Line
 	4700 4480 4750 4480
 Wire Wire Line
-	4750 4110 4750 4580
+	4750 4110 4750 4480
+Wire Wire Line
+	4750 4480 4750 4580
 Wire Wire Line
 	4750 4580 4700 4580
 Connection ~ 4750 4480
@@ -548,11 +587,11 @@ Wire Wire Line
 	3400 4110 4750 4110
 Connection ~ 2895 3170
 Wire Wire Line
-	3940 4580 3190 4580
-Wire Wire Line
-	3190 4580 3190 3170
+	3190 4480 3190 3170
 Wire Wire Line
 	3190 3170 2900 3170
 Text Notes 3650 4385 0    60   ~ 0
 LT5400-8\n9K/1K
+Wire Wire Line
+	3940 4480 3190 4480
 $EndSCHEMATC

@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:opendcm
-LIBS:voltmeter_dual_supply-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
