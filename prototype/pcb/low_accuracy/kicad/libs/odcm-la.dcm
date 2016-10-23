@@ -1,0 +1,44 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +12V
+K POWER, PWR
+$ENDCMP
+#
+$CMP +30V
+K POWER, PWR
+$ENDCMP
+#
+$CMP -30V
+K POWER, PWR
+$ENDCMP
+#
+$CMP 74HC4053
+D Triple analog Multiplexer 2 to 1 line
+K CMOS MUX MUX2
+$ENDCMP
+#
+$CMP CONN_01X01
+D Connector 01x01
+$ENDCMP
+#
+$CMP GNDA
+K POWER, PWR
+$ENDCMP
+#
+$CMP GNDD
+K POWER, PWR
+$ENDCMP
+#
+$CMP LTC2057
+D Op Amp.
+K AmpliOp
+F AmpliOp.sch
+$ENDCMP
+#
+$CMP MMBT3904
+D 40V Vce, 0.2A Ic, NPN, Small Signal Transistor, SOT-23
+K MMBT3904 NPN Transistor
+F http://www.nxp.com/documents/data_sheet/MMBT3904.pdf
+$ENDCMP
+#
+#End Doc Library
