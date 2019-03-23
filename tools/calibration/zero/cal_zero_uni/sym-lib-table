@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name cal_zero_uni)(type Legacy)(uri ${KIPRJMOD}/cal_zero_uni.lib)(options "")(descr ""))
+)

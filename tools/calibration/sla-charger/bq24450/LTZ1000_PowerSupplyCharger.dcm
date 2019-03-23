@@ -1,0 +1,71 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BC547
+D 0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92
+K NPN Transistor
+F http://www.fairchildsemi.com/ds/BC/BC547.pdf
+$ENDCMP
+#
+$CMP BSS138
+D 50V Vds, 0.22A Id, N-channel MOSFET, SOT-23
+K N-Channel MOSFET
+F https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf
+$ENDCMP
+#
+$CMP C
+D Unpolarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP CP
+D Polarised capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP D
+D Diode
+K diode
+F ~
+$ENDCMP
+#
+$CMP D2
+D Diode
+K diode
+F ~
+$ENDCMP
+#
+$CMP LED
+D LED generic
+K led diode
+F ~
+$ENDCMP
+#
+$CMP MIC2940
+D Low-noise Low-dropout Regulator With Shutdown
+$ENDCMP
+#
+$CMP MIC2941
+D Low-noise Low-dropout Regulator With Shutdown
+$ENDCMP
+#
+$CMP Polyfuse
+D Resettable fuse, polymeric positive temperature coefficient
+K resettable fuse PTC PPTC polyfuse polyswitch
+F ~
+$ENDCMP
+#
+$CMP R
+D Resistor
+K r res resistor
+F ~
+$ENDCMP
+#
+$CMP R_POT
+D Potentiometer
+K resistor variable
+F ~
+$ENDCMP
+#
+#End Doc Library

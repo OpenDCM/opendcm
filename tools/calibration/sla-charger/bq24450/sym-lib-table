@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name LTZ1000_PowerSupplyCharger)(type Legacy)(uri ${KIPRJMOD}/LTZ1000_PowerSupplyCharger.lib)(options "")(descr ""))
+)

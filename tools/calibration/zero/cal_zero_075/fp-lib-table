@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name cal_zero_075)(type KiCad)(uri ${KIPRJMOD}/cal_zero_075)(options "")(descr ""))
+)

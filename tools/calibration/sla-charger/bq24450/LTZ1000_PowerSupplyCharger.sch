@@ -1,0 +1,1206 @@
+EESchema Schematic File Version 4
+LIBS:LTZ1000_PowerSupplyCharger-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5B8C0F7D
+P 885 3455
+F 0 "J1" H 1025 3405 50  0000 C CNN
+F 1 "Vin" H 805 3221 50  0001 C CNN
+F 2 "LTZ1000_PowerSupplyCharger:PCB_Terminal_2_2.54" H 885 3455 50  0001 C CNN
+F 3 "~" H 885 3455 50  0001 C CNN
+	1    885  3455
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J18
+U 1 1 5B8C1049
+P 8005 5410
+F 0 "J18" H 8085 5402 50  0000 L CNN
+F 1 "Battery" H 8085 5311 50  0001 L CNN
+F 2 "LTZ1000_PowerSupplyCharger:PCB_Terminal_2_2.54" H 8005 5410 50  0001 C CNN
+F 3 "~" H 8005 5410 50  0001 C CNN
+	1    8005 5410
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5B8C1177
+P 1170 3690
+F 0 "#PWR01" H 1170 3440 50  0001 C CNN
+F 1 "GND" H 1175 3517 50  0000 C CNN
+F 2 "" H 1170 3690 50  0001 C CNN
+F 3 "" H 1170 3690 50  0001 C CNN
+	1    1170 3690
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5B8C11CE
+P 7675 5675
+F 0 "#PWR010" H 7675 5425 50  0001 C CNN
+F 1 "GND" H 7680 5502 50  0000 C CNN
+F 2 "" H 7675 5675 50  0001 C CNN
+F 3 "" H 7675 5675 50  0001 C CNN
+	1    7675 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5B8C11DF
+P 2075 4880
+F 0 "#PWR04" H 2075 4630 50  0001 C CNN
+F 1 "GND" H 2080 4707 50  0000 C CNN
+F 2 "" H 2075 4880 50  0001 C CNN
+F 3 "" H 2075 4880 50  0001 C CNN
+	1    2075 4880
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2220 3995 2175 3995
+Wire Wire Line
+	2175 3995 2175 4095
+Wire Wire Line
+	2175 4095 2220 4095
+Wire Wire Line
+	2020 3235 2770 3235
+Wire Wire Line
+	1085 3555 1170 3555
+Wire Wire Line
+	1170 3555 1170 3690
+Wire Wire Line
+	2020 3455 2020 3235
+Wire Wire Line
+	2770 3235 2770 3295
+$Comp
+L LTZ1000_PowerSupplyCharger:Q_PNP_BCE Q3
+U 1 1 5B8F4880
+P 3470 2350
+F 0 "Q3" V 3798 2350 50  0000 C CNN
+F 1 "B  C  E" V 3707 2350 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 3670 2450 50  0001 C CNN
+F 3 "~" H 3470 2350 50  0001 C CNN
+	1    3470 2350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2770 3235 2770 3155
+Connection ~ 2770 3235
+Wire Wire Line
+	2075 4880 2075 4595
+Wire Wire Line
+	2075 4595 2220 4595
+$Comp
+L LTZ1000_PowerSupplyCharger:C Ccomp1
+U 1 1 5B8F3B99
+P 1720 4670
+F 0 "Ccomp1" H 1250 4715 50  0000 L CNN
+F 1 "0.22uF" H 1310 4610 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1758 4520 50  0001 C CNN
+F 3 "~" H 1720 4670 50  0001 C CNN
+	1    1720 4670
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5B8F4495
+P 1720 4880
+F 0 "#PWR03" H 1720 4630 50  0001 C CNN
+F 1 "GND" H 1725 4707 50  0000 C CNN
+F 2 "" H 1720 4880 50  0001 C CNN
+F 3 "" H 1720 4880 50  0001 C CNN
+	1    1720 4880
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1720 4520 1720 4495
+Wire Wire Line
+	1720 4495 1820 4495
+$Comp
+L LTZ1000_PowerSupplyCharger:R RT1
+U 1 1 5B8F9747
+P 4815 3220
+F 0 "RT1" V 4710 3215 50  0000 C CNN
+F 1 "510" V 4810 3215 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4745 3220 50  0001 C CNN
+F 3 "~" H 4815 3220 50  0001 C CNN
+	1    4815 3220
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4815 3370 4815 3695
+Wire Wire Line
+	4815 3695 4620 3695
+$Comp
+L LTZ1000_PowerSupplyCharger:R RB2
+U 1 1 5B8FBA0B
+P 5920 4095
+F 0 "RB2" V 5820 4095 50  0000 C CNN
+F 1 "12K" V 5915 4095 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5850 4095 50  0001 C CNN
+F 3 "~" H 5920 4095 50  0001 C CNN
+	1    5920 4095
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:R RC1
+U 1 1 5B8FD5AA
+P 5665 4350
+F 0 "RC1" V 5565 4350 50  0000 C CNN
+F 1 "45.3K" V 5655 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5595 4350 50  0001 C CNN
+F 3 "~" H 5665 4350 50  0001 C CNN
+	1    5665 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5320 3365 5320 3330
+Wire Wire Line
+	5230 2950 5320 2950
+Wire Wire Line
+	4815 3070 4815 2950
+Wire Wire Line
+	4815 2950 4930 2950
+Text GLabel 7725 5410 0    50   Input ~ 0
+VBatt
+Wire Wire Line
+	7725 5410 7805 5410
+Wire Wire Line
+	7805 5510 7675 5510
+Wire Wire Line
+	7675 5510 7675 5675
+Text GLabel 6395 2950 2    50   Input ~ 0
+VBatt
+$Comp
+L LTZ1000_PowerSupplyCharger:R RD1
+U 1 1 5B90D645
+P 4935 4220
+F 0 "RD1" V 5025 4220 50  0000 C CNN
+F 1 "430K" V 4930 4215 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4865 4220 50  0001 C CNN
+F 3 "~" H 4935 4220 50  0001 C CNN
+	1    4935 4220
+	0    -1   1    0   
+$EndComp
+Text GLabel 5280 4495 2    50   Input ~ 0
+STAT2
+Text GLabel 5280 4395 2    50   Input ~ 0
+STAT1
+Wire Wire Line
+	4620 4495 5280 4495
+$Comp
+L LTZ1000_PowerSupplyCharger:LED D4
+U 1 1 5B90E394
+P 3625 6570
+F 0 "D4" V 3663 6453 50  0000 R CNN
+F 1 "Power" V 3572 6453 50  0000 R CNN
+F 2 "LEDs:LED_D5.0mm" H 3625 6570 50  0001 C CNN
+F 3 "~" H 3625 6570 50  0001 C CNN
+	1    3625 6570
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5B90E39A
+P 3625 6820
+F 0 "#PWR011" H 3625 6570 50  0001 C CNN
+F 1 "GND" H 3630 6647 50  0000 C CNN
+F 2 "" H 3625 6820 50  0001 C CNN
+F 3 "" H 3625 6820 50  0001 C CNN
+	1    3625 6820
+	1    0    0    -1  
+$EndComp
+Text GLabel 3570 5350 0    50   Input ~ 0
+Vin
+Wire Wire Line
+	3570 5350 3625 5350
+Wire Wire Line
+	3625 5350 3625 5430
+Wire Wire Line
+	3625 6820 3625 6720
+$Comp
+L LTZ1000_PowerSupplyCharger:R R6
+U 1 1 5B90E3A5
+P 3625 5580
+F 0 "R6" V 3418 5580 50  0000 C CNN
+F 1 "6k8" V 3509 5580 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3555 5580 50  0001 C CNN
+F 3 "~" H 3625 5580 50  0001 C CNN
+	1    3625 5580
+	-1   0    0    1   
+$EndComp
+Text Notes 3740 6405 0    50   ~ 0
+Power
+Wire Wire Line
+	3625 5730 3625 6420
+$Comp
+L LTZ1000_PowerSupplyCharger:BC547 Q2
+U 1 1 5B91040A
+P 2020 6365
+F 0 "Q2" H 2211 6411 50  0000 L CNN
+F 1 "BC547" H 2211 6320 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 2220 6290 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 2020 6365 50  0001 L CNN
+	1    2020 6365
+	1    0    0    -1  
+$EndComp
+Text GLabel 1440 5320 0    50   Input ~ 0
+Vin
+$Comp
+L LTZ1000_PowerSupplyCharger:R R2
+U 1 1 5B916882
+P 2120 5575
+F 0 "R2" V 1913 5575 50  0000 C CNN
+F 1 "6k8" V 2004 5575 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2050 5575 50  0001 C CNN
+F 3 "~" H 2120 5575 50  0001 C CNN
+	1    2120 5575
+	-1   0    0    1   
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:LED D1
+U 1 1 5B91690C
+P 2120 5920
+F 0 "D1" V 2158 5803 50  0000 R CNN
+F 1 "Charging" V 2067 5803 50  0000 R CNN
+F 2 "LEDs:LED_D5.0mm" H 2120 5920 50  0001 C CNN
+F 3 "~" H 2120 5920 50  0001 C CNN
+	1    2120 5920
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2120 6070 2120 6165
+Wire Wire Line
+	2120 5725 2120 5770
+Wire Wire Line
+	2120 5320 2120 5425
+$Comp
+L power:GND #PWR05
+U 1 1 5B9213B9
+P 2120 6815
+F 0 "#PWR05" H 2120 6565 50  0001 C CNN
+F 1 "GND" H 2125 6642 50  0000 C CNN
+F 2 "" H 2120 6815 50  0001 C CNN
+F 3 "" H 2120 6815 50  0001 C CNN
+	1    2120 6815
+	1    0    0    -1  
+$EndComp
+Text Notes 2510 5940 0    50   ~ 0
+Charging
+$Comp
+L LTZ1000_PowerSupplyCharger:BSS138 Q1
+U 1 1 5B90382E
+P 1570 6565
+F 0 "Q1" H 1775 6611 50  0000 L CNN
+F 1 "BSS138" H 1775 6520 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 1770 6490 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 1570 6565 50  0001 L CNN
+	1    1570 6565
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5B903AD7
+P 1670 6815
+F 0 "#PWR02" H 1670 6565 50  0001 C CNN
+F 1 "GND" H 1675 6642 50  0000 C CNN
+F 2 "" H 1670 6815 50  0001 C CNN
+F 3 "" H 1670 6815 50  0001 C CNN
+	1    1670 6815
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1670 6365 1820 6365
+Wire Wire Line
+	1305 6565 1370 6565
+Text GLabel 1305 6565 0    50   Input ~ 0
+STAT1
+Connection ~ 5320 2950
+$Comp
+L LTZ1000_PowerSupplyCharger:R R1
+U 1 1 5B9210F9
+P 1670 5575
+F 0 "R1" V 1463 5575 50  0000 C CNN
+F 1 "330k" V 1554 5575 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1600 5575 50  0001 C CNN
+F 3 "~" H 1670 5575 50  0001 C CNN
+	1    1670 5575
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1670 6365 1670 5725
+Connection ~ 1670 6365
+Wire Wire Line
+	1440 5320 1670 5320
+Wire Wire Line
+	1670 5320 1670 5425
+Wire Wire Line
+	1670 5320 2120 5320
+Connection ~ 1670 5320
+$Comp
+L LTZ1000_PowerSupplyCharger:MIC2940 U2
+U 1 1 5BC5408E
+P 8275 3025
+F 0 "U2" H 8275 3367 50  0000 C CNN
+F 1 "MIC2940" H 8275 3276 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220-5_Vertical" H 8275 3025 50  0001 C CNN
+F 3 "" H 8275 3025 50  0001 C CNN
+	1    8275 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7875 3125 7820 3125
+Wire Wire Line
+	7820 3125 7820 3375
+Wire Wire Line
+	7820 3375 8275 3375
+Wire Wire Line
+	8275 3375 8275 3325
+$Comp
+L LTZ1000_PowerSupplyCharger:R R8
+U 1 1 5BC5A486
+P 8995 3825
+F 0 "R8" V 8788 3825 50  0000 C CNN
+F 1 "102k" V 8879 3825 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8925 3825 50  0001 C CNN
+F 3 "~" H 8995 3825 50  0001 C CNN
+	1    8995 3825
+	-1   0    0    1   
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:C C3
+U 1 1 5BC5A7EB
+P 9435 3100
+F 0 "C3" H 9550 3146 50  0000 L CNN
+F 1 "1nF" H 9550 3055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9473 2950 50  0001 C CNN
+F 3 "~" H 9435 3100 50  0001 C CNN
+	1    9435 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:C C2
+U 1 1 5BC5A8D7
+P 7410 3150
+F 0 "C2" H 7525 3196 50  0000 L CNN
+F 1 "0.22uF" H 7525 3105 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7448 3000 50  0001 C CNN
+F 3 "~" H 7410 3150 50  0001 C CNN
+	1    7410 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9435 2925 9435 2950
+Wire Wire Line
+	8675 3125 8690 3125
+Wire Wire Line
+	9435 3250 9435 3295
+Wire Wire Line
+	9435 3295 9145 3295
+Connection ~ 9435 2925
+$Comp
+L power:GND #PWR012
+U 1 1 5BC6FB6F
+P 7410 3385
+F 0 "#PWR012" H 7410 3135 50  0001 C CNN
+F 1 "GND" H 7415 3212 50  0000 C CNN
+F 2 "" H 7410 3385 50  0001 C CNN
+F 3 "" H 7410 3385 50  0001 C CNN
+	1    7410 3385
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5BC6FBC8
+P 8995 4050
+F 0 "#PWR014" H 8995 3800 50  0001 C CNN
+F 1 "GND" H 9000 3877 50  0000 C CNN
+F 2 "" H 8995 4050 50  0001 C CNN
+F 3 "" H 8995 4050 50  0001 C CNN
+	1    8995 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5BC6FC21
+P 9780 3300
+F 0 "#PWR015" H 9780 3050 50  0001 C CNN
+F 1 "GND" H 9785 3127 50  0000 C CNN
+F 2 "" H 9780 3300 50  0001 C CNN
+F 3 "" H 9780 3300 50  0001 C CNN
+	1    9780 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7410 2925 7410 3000
+$Comp
+L Connector_Generic:Conn_01x02 J19
+U 1 1 5BC81A8F
+P 10375 3065
+F 0 "J19" H 10455 3057 50  0000 L CNN
+F 1 "Vout" H 10455 2966 50  0001 L CNN
+F 2 "LTZ1000_PowerSupplyCharger:PCB_Terminal_2_2.54" H 10375 3065 50  0001 C CNN
+F 3 "~" H 10375 3065 50  0001 C CNN
+	1    10375 3065
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5BC81D3F
+P 10110 3300
+F 0 "#PWR016" H 10110 3050 50  0001 C CNN
+F 1 "GND" H 10115 3127 50  0000 C CNN
+F 2 "" H 10110 3300 50  0001 C CNN
+F 3 "" H 10110 3300 50  0001 C CNN
+	1    10110 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10110 2925 10110 3065
+Wire Wire Line
+	10110 3065 10175 3065
+Wire Wire Line
+	10110 3300 10110 3165
+Wire Wire Line
+	10110 3165 10175 3165
+Wire Wire Line
+	8675 2925 8995 2925
+$Comp
+L LTZ1000_PowerSupplyCharger:CP C4
+U 1 1 5BCA063D
+P 9780 3105
+F 0 "C4" H 9898 3151 50  0000 L CNN
+F 1 "22uF" H 9898 3060 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H 9818 2955 50  0001 C CNN
+F 3 "~" H 9780 3105 50  0001 C CNN
+	1    9780 3105
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:R_POT RV1
+U 1 1 5BCA0722
+P 8995 3095
+F 0 "RV1" H 8925 3141 50  0000 R CNN
+F 1 "200K" H 8925 3050 50  0000 R CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3296W" H 8995 3095 50  0001 C CNN
+F 3 "~" H 8995 3095 50  0001 C CNN
+	1    8995 3095
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8995 2945 8995 2925
+Connection ~ 8995 2925
+Wire Wire Line
+	8995 2925 9435 2925
+Wire Wire Line
+	8995 3245 8995 3295
+Wire Wire Line
+	9145 3095 9145 3295
+Connection ~ 9145 3295
+Wire Wire Line
+	9145 3295 8995 3295
+Wire Wire Line
+	9435 2925 9780 2925
+Wire Wire Line
+	9780 2955 9780 2925
+Connection ~ 9780 2925
+Wire Wire Line
+	9780 2925 10110 2925
+Wire Wire Line
+	9780 3255 9780 3300
+$Comp
+L LTZ1000_PowerSupplyCharger:R R7
+U 1 1 5BCBBCA2
+P 8995 3455
+F 0 "R7" V 8788 3455 50  0000 C CNN
+F 1 "750k" V 8879 3455 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8925 3455 50  0001 C CNN
+F 3 "~" H 8995 3455 50  0001 C CNN
+	1    8995 3455
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8995 3625 8995 3675
+Wire Wire Line
+	8995 3305 8995 3295
+Connection ~ 8995 3295
+Wire Wire Line
+	8995 3605 8995 3625
+Connection ~ 8995 3625
+Wire Wire Line
+	8995 3975 8995 4050
+Text GLabel 7300 2925 0    50   Input ~ 0
+VBatt
+Wire Wire Line
+	7300 2925 7410 2925
+$Comp
+L power:GND #PWR08
+U 1 1 5C0B5496
+P 4590 3390
+F 0 "#PWR08" H 4590 3140 50  0001 C CNN
+F 1 "GND" H 4595 3217 50  0000 C CNN
+F 2 "" H 4590 3390 50  0001 C CNN
+F 3 "" H 4590 3390 50  0001 C CNN
+	1    4590 3390
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3770 3295 3770 3265
+$Comp
+L LTZ1000_PowerSupplyCharger:R Rs3
+U 1 1 5C0FB19D
+P 1975 2965
+F 0 "Rs3" V 2075 2965 50  0000 C CNN
+F 1 "0R68" V 1970 2970 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1905 2965 50  0001 C CNN
+F 3 "~" H 1975 2965 50  0001 C CNN
+	1    1975 2965
+	0    1    1    0   
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:R Rs2
+U 1 1 5C102F24
+P 1970 2780
+F 0 "Rs2" V 2065 2795 50  0000 C CNN
+F 1 "0R68" V 1970 2785 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1900 2780 50  0001 C CNN
+F 3 "~" H 1970 2780 50  0001 C CNN
+	1    1970 2780
+	0    1    1    0   
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:R Rs1
+U 1 1 5C103016
+P 1970 2590
+F 0 "Rs1" V 2060 2600 50  0000 C CNN
+F 1 "0R68" V 1970 2595 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1900 2590 50  0001 C CNN
+F 3 "~" H 1970 2590 50  0001 C CNN
+	1    1970 2590
+	0    1    1    0   
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:R RP3
+U 1 1 5C1BB9DD
+P 4290 2950
+F 0 "RP3" V 4200 2950 50  0000 C CNN
+F 1 "15K" V 4285 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4220 2950 50  0001 C CNN
+F 3 "~" H 4290 2950 50  0001 C CNN
+	1    4290 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:R RP2
+U 1 1 5C1C2565
+P 4290 2770
+F 0 "RP2" V 4200 2770 50  0000 C CNN
+F 1 "22K1" V 4290 2770 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4220 2770 50  0001 C CNN
+F 3 "~" H 4290 2770 50  0001 C CNN
+	1    4290 2770
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:R RP1
+U 1 1 5C1C2572
+P 4290 2580
+F 0 "RP1" V 4190 2580 50  0000 C CNN
+F 1 "43K" V 4285 2580 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4220 2580 50  0001 C CNN
+F 3 "~" H 4290 2580 50  0001 C CNN
+	1    4290 2580
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4815 2250 4815 2950
+Connection ~ 4815 2950
+Wire Wire Line
+	5665 4095 5665 4200
+Connection ~ 5665 4095
+Wire Wire Line
+	3470 2550 3470 3295
+$Comp
+L power:GND #PWR013
+U 1 1 5C359FDD
+P 8275 3375
+F 0 "#PWR013" H 8275 3125 50  0001 C CNN
+F 1 "GND" H 8280 3202 50  0000 C CNN
+F 2 "" H 8275 3375 50  0001 C CNN
+F 3 "" H 8275 3375 50  0001 C CNN
+	1    8275 3375
+	1    0    0    -1  
+$EndComp
+Connection ~ 8275 3375
+Wire Wire Line
+	7410 3300 7410 3385
+Wire Wire Line
+	1670 6765 1670 6815
+Wire Wire Line
+	2120 6565 2120 6815
+Wire Wire Line
+	1720 4820 1720 4880
+Wire Wire Line
+	2020 3455 2020 3695
+Wire Wire Line
+	2020 3695 2220 3695
+Connection ~ 2020 3455
+Wire Wire Line
+	7875 2925 7410 2925
+Connection ~ 7410 2925
+Wire Wire Line
+	1085 3455 1450 3455
+Text Notes 730  3810 0    50   ~ 0
+Vinput\n17-21V
+Text Notes 10720 3195 0    50   ~ 0
+Load\nconnector
+Wire Wire Line
+	3170 2250 3270 2250
+Text Notes 8270 5550 0    50   ~ 0
+Battery \nconnector
+Wire Wire Line
+	3670 2250 4815 2250
+$Comp
+L LTZ1000_PowerSupplyCharger:R Rcomp1
+U 1 1 5C464CF2
+P 1970 4495
+F 0 "Rcomp1" V 2070 4495 50  0000 C CNN
+F 1 "470" V 1960 4495 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1900 4495 50  0001 C CNN
+F 3 "~" H 1970 4495 50  0001 C CNN
+	1    1970 4495
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2120 4495 2220 4495
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J2
+U 1 1 5C467336
+P 2445 2815
+F 0 "J2" H 2495 3140 50  0000 C CNN
+F 1 "Charging" H 2495 3141 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 2445 2815 50  0001 C CNN
+F 3 "~" H 2445 2815 50  0001 C CNN
+	1    2445 2815
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J3
+U 1 1 5C4C7769
+P 3745 2815
+F 0 "J3" H 3795 3140 50  0000 C CNN
+F 1 "PowerDispersion" H 3795 3141 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 3745 2815 50  0001 C CNN
+F 3 "~" H 3745 2815 50  0001 C CNN
+	1    3745 2815
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:BQ24450 U1
+U 1 1 5B8AD5CF
+P 2520 3945
+F 0 "U1" H 3420 3115 60  0000 C CNN
+F 1 "BQ24450" H 3420 3009 60  0000 C CNN
+F 2 "LTZ1000_PowerSupplyCharger:SOIC-16" H 3420 2903 60  0000 C CNN
+F 3 "" H 2520 3945 60  0000 C CNN
+	1    2520 3945
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4045 2715 4090 2715
+Wire Wire Line
+	4090 2715 4090 2580
+Wire Wire Line
+	4090 2580 4140 2580
+Wire Wire Line
+	4045 2815 4140 2815
+Wire Wire Line
+	4140 2815 4140 2770
+Wire Wire Line
+	4045 2915 4090 2915
+Wire Wire Line
+	4090 2915 4090 2950
+Wire Wire Line
+	4090 2950 4140 2950
+Wire Wire Line
+	4440 2950 4590 2950
+Wire Wire Line
+	4440 2770 4590 2770
+Wire Wire Line
+	4440 2580 4590 2580
+Wire Wire Line
+	3770 3265 3545 3265
+Wire Wire Line
+	1750 3155 2770 3155
+Wire Wire Line
+	1750 2965 1825 2965
+Wire Wire Line
+	1750 2965 1750 2780
+Wire Wire Line
+	1750 2780 1820 2780
+Wire Wire Line
+	1750 2780 1750 2590
+Wire Wire Line
+	1750 2590 1820 2590
+Connection ~ 1750 2780
+Wire Wire Line
+	2120 2590 2185 2590
+Wire Wire Line
+	2185 2590 2185 2715
+Wire Wire Line
+	2185 2715 2245 2715
+Wire Wire Line
+	2120 2780 2120 2815
+Wire Wire Line
+	2120 2815 2245 2815
+Wire Wire Line
+	2125 2965 2125 2915
+Wire Wire Line
+	2125 2915 2245 2915
+Wire Wire Line
+	2745 2715 2745 2815
+Connection ~ 2745 2815
+Connection ~ 3070 2980
+Wire Wire Line
+	3070 2980 3070 3295
+Text GLabel 4775 5335 0    50   Input ~ 0
+VBatt
+$Comp
+L power:GND #PWR0101
+U 1 1 5C102A7F
+P 5085 6545
+F 0 "#PWR0101" H 5085 6295 50  0001 C CNN
+F 1 "GND" H 5090 6372 50  0000 C CNN
+F 2 "" H 5085 6545 50  0001 C CNN
+F 3 "" H 5085 6545 50  0001 C CNN
+	1    5085 6545
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:R R10
+U 1 1 5C10343F
+P 5085 5655
+F 0 "R10" V 4878 5655 50  0000 C CNN
+F 1 "91K" V 4969 5655 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5015 5655 50  0001 C CNN
+F 3 "~" H 5085 5655 50  0001 C CNN
+	1    5085 5655
+	-1   0    0    1   
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:R R11
+U 1 1 5C1034F5
+P 5085 6270
+F 0 "R11" V 4878 6270 50  0000 C CNN
+F 1 "68K" V 4969 6270 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5015 6270 50  0001 C CNN
+F 3 "~" H 5085 6270 50  0001 C CNN
+	1    5085 6270
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5085 6545 5085 6480
+$Comp
+L LTZ1000_PowerSupplyCharger:TC54 U3
+U 1 1 5C131EF5
+P 5860 5505
+F 0 "U3" H 6088 5320 50  0000 L CNN
+F 1 "TC54" H 6088 5229 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 5860 5505 50  0001 C CNN
+F 3 "" H 5860 5505 50  0001 C CNN
+	1    5860 5505
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5085 6045 5760 6045
+Wire Wire Line
+	5760 6045 5760 5955
+Wire Wire Line
+	5085 6045 5085 6120
+Wire Wire Line
+	5860 5955 5860 6480
+Wire Wire Line
+	5860 6480 5085 6480
+Connection ~ 5085 6480
+Wire Wire Line
+	5085 6480 5085 6420
+$Comp
+L LTZ1000_PowerSupplyCharger:R R12
+U 1 1 5C162824
+P 6535 5505
+F 0 "R12" V 6328 5505 50  0000 C CNN
+F 1 "6K8" V 6419 5505 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6465 5505 50  0001 C CNN
+F 3 "~" H 6535 5505 50  0001 C CNN
+	1    6535 5505
+	-1   0    0    1   
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:LED D5
+U 1 1 5C1628F8
+P 6535 5885
+F 0 "D5" V 6573 5768 50  0000 R CNN
+F 1 "UVD" V 6482 5768 50  0000 R CNN
+F 2 "LEDs:LED_D5.0mm" H 6535 5885 50  0001 C CNN
+F 3 "~" H 6535 5885 50  0001 C CNN
+	1    6535 5885
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5960 5955 5960 6150
+Wire Wire Line
+	5960 6150 6535 6150
+Wire Wire Line
+	6535 6150 6535 6035
+Wire Wire Line
+	6535 5655 6535 5735
+Wire Wire Line
+	6535 5335 6535 5355
+Text Notes 5395 5175 0    50   ~ 0
+UnderVoltageDetection
+Wire Wire Line
+	3170 2250 3170 2980
+Wire Wire Line
+	3070 2980 3170 2980
+Connection ~ 3170 2980
+Wire Wire Line
+	3170 2980 3170 3295
+$Comp
+L LTZ1000_PowerSupplyCharger:C C5
+U 1 1 5C1C4481
+P 1450 3605
+F 0 "C5" H 1565 3651 50  0000 L CNN
+F 1 "1uF" H 1565 3560 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1488 3455 50  0001 C CNN
+F 3 "~" H 1450 3605 50  0001 C CNN
+	1    1450 3605
+	1    0    0    -1  
+$EndComp
+Connection ~ 1450 3455
+Wire Wire Line
+	1450 3455 1795 3455
+$Comp
+L power:GND #PWR0102
+U 1 1 5C1C48D5
+P 1450 3810
+F 0 "#PWR0102" H 1450 3560 50  0001 C CNN
+F 1 "GND" H 1455 3637 50  0000 C CNN
+F 2 "" H 1450 3810 50  0001 C CNN
+F 3 "" H 1450 3810 50  0001 C CNN
+	1    1450 3810
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3755 1450 3810
+$Comp
+L LTZ1000_PowerSupplyCharger:C C6
+U 1 1 5C1D06D6
+P 5710 3100
+F 0 "C6" H 5825 3146 50  0000 L CNN
+F 1 "0.1uF" H 5825 3055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5748 2950 50  0001 C CNN
+F 3 "~" H 5710 3100 50  0001 C CNN
+	1    5710 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 5710 2950
+Wire Wire Line
+	5710 2950 6160 2950
+$Comp
+L power:GND #PWR0103
+U 1 1 5C1D1E23
+P 5710 3290
+F 0 "#PWR0103" H 5710 3040 50  0001 C CNN
+F 1 "GND" H 5715 3117 50  0000 C CNN
+F 2 "" H 5710 3290 50  0001 C CNN
+F 3 "" H 5710 3290 50  0001 C CNN
+	1    5710 3290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5710 3250 5710 3290
+$Comp
+L LTZ1000_PowerSupplyCharger:C C7
+U 1 1 5C1EA672
+P 1795 3605
+F 0 "C7" H 1910 3651 50  0000 L CNN
+F 1 "0.1uF" H 1910 3560 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1833 3455 50  0001 C CNN
+F 3 "~" H 1795 3605 50  0001 C CNN
+	1    1795 3605
+	1    0    0    -1  
+$EndComp
+Connection ~ 1795 3455
+Wire Wire Line
+	1795 3455 2020 3455
+$Comp
+L power:GND #PWR0104
+U 1 1 5C1EA8A8
+P 1795 3810
+F 0 "#PWR0104" H 1795 3560 50  0001 C CNN
+F 1 "GND" H 1800 3637 50  0000 C CNN
+F 2 "" H 1795 3810 50  0001 C CNN
+F 3 "" H 1795 3810 50  0001 C CNN
+	1    1795 3810
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1795 3755 1795 3810
+$Comp
+L LTZ1000_PowerSupplyCharger:C C8
+U 1 1 5C202F47
+P 6160 3100
+F 0 "C8" H 6275 3146 50  0000 L CNN
+F 1 "1uF" H 6275 3055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6198 2950 50  0001 C CNN
+F 3 "~" H 6160 3100 50  0001 C CNN
+	1    6160 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6160 2950
+Wire Wire Line
+	6160 2950 6395 2950
+$Comp
+L power:GND #PWR0105
+U 1 1 5C202FE1
+P 6160 3290
+F 0 "#PWR0105" H 6160 3040 50  0001 C CNN
+F 1 "GND" H 6165 3117 50  0000 C CNN
+F 2 "" H 6160 3290 50  0001 C CNN
+F 3 "" H 6160 3290 50  0001 C CNN
+	1    6160 3290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6160 3250 6160 3290
+Wire Wire Line
+	5320 2950 5710 2950
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5C2514FF
+P 9520 4940
+F 0 "H2" H 9620 4940 50  0000 L CNN
+F 1 "MountingHole" H 9620 4895 50  0001 L CNN
+F 2 "LTZ1000_PowerSupplyCharger:NPTH" H 9520 4940 50  0001 C CNN
+F 3 "~" H 9520 4940 50  0001 C CNN
+	1    9520 4940
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5C2515BB
+P 9520 5190
+F 0 "H3" H 9620 5190 50  0000 L CNN
+F 1 "MountingHole" H 9620 5145 50  0001 L CNN
+F 2 "LTZ1000_PowerSupplyCharger:NPTH" H 9520 5190 50  0001 C CNN
+F 3 "~" H 9520 5190 50  0001 C CNN
+	1    9520 5190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5C251685
+P 9520 5435
+F 0 "H4" H 9620 5435 50  0000 L CNN
+F 1 "MountingHole" H 9620 5390 50  0001 L CNN
+F 2 "LTZ1000_PowerSupplyCharger:NPTH" H 9520 5435 50  0001 C CNN
+F 3 "~" H 9520 5435 50  0001 C CNN
+	1    9520 5435
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5C251B28
+P 9520 5635
+F 0 "H5" H 9620 5635 50  0000 L CNN
+F 1 "MountingHole" H 9620 5590 50  0001 L CNN
+F 2 "LTZ1000_PowerSupplyCharger:NPTH" H 9520 5635 50  0001 C CNN
+F 3 "~" H 9520 5635 50  0001 C CNN
+	1    9520 5635
+	1    0    0    -1  
+$EndComp
+Text GLabel 2765 2540 2    50   Input ~ 0
+Charge
+$Comp
+L LTZ1000_PowerSupplyCharger:D2 D2
+U 1 1 5C1C9976
+P 5080 2950
+F 0 "D2" H 5080 2734 50  0000 C CNN
+F 1 "SR1640" H 5080 2825 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 5080 2950 50  0001 C CNN
+F 3 "~" H 5080 2950 50  0001 C CNN
+	1    5080 2950
+	-1   0    0    1   
+$EndComp
+Text Notes 3355 1950 0    50   ~ 0
+TP127
+Text GLabel 1975 3235 0    50   Input ~ 0
+Vin
+Wire Wire Line
+	1975 3235 2020 3235
+Connection ~ 2020 3235
+Wire Wire Line
+	2765 2540 2745 2540
+Wire Wire Line
+	2745 2540 2745 2715
+Connection ~ 2745 2715
+Wire Wire Line
+	1750 2965 1750 3155
+Connection ~ 1750 2965
+Wire Wire Line
+	2745 2915 3070 2915
+Connection ~ 2745 2915
+Wire Wire Line
+	3070 2915 3070 2980
+Wire Wire Line
+	2745 2815 2745 2915
+Wire Wire Line
+	3545 2915 3545 3265
+Connection ~ 4590 2770
+Wire Wire Line
+	4590 2770 4590 2950
+Connection ~ 4590 2950
+Wire Wire Line
+	4590 2950 4590 3390
+Wire Wire Line
+	4590 2580 4590 2770
+Wire Wire Line
+	3545 2715 3545 2815
+Wire Wire Line
+	3545 2815 3545 2915
+Connection ~ 3545 2815
+Connection ~ 3545 2915
+$Comp
+L LTZ1000_PowerSupplyCharger:R RC2
+U 1 1 5C661EAC
+P 5665 4745
+F 0 "RC2" V 5565 4745 50  0000 C CNN
+F 1 "0" V 5655 4745 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5595 4745 50  0001 C CNN
+F 3 "~" H 5665 4745 50  0001 C CNN
+	1    5665 4745
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4620 4595 4785 4595
+Wire Wire Line
+	4785 4595 4785 4955
+Wire Wire Line
+	4785 4955 5665 4955
+Wire Wire Line
+	5665 4955 5665 4895
+Wire Wire Line
+	5770 4095 5665 4095
+Wire Wire Line
+	6070 4095 6125 4095
+Wire Wire Line
+	6125 4095 6125 3795
+Wire Wire Line
+	6125 3795 6070 3795
+$Comp
+L LTZ1000_PowerSupplyCharger:R RA2
+U 1 1 5C78A48F
+P 5320 3180
+F 0 "RA2" V 5215 3180 50  0000 C CNN
+F 1 "10K" V 5315 3180 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5250 3180 50  0001 C CNN
+F 3 "~" H 5320 3180 50  0001 C CNN
+	1    5320 3180
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5320 3030 5320 2950
+$Comp
+L LTZ1000_PowerSupplyCharger:R RB1
+U 1 1 5C78AADF
+P 5920 3795
+F 0 "RB1" V 5820 3795 50  0000 C CNN
+F 1 "0" V 5915 3795 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5850 3795 50  0001 C CNN
+F 3 "~" H 5920 3795 50  0001 C CNN
+	1    5920 3795
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:R RD2
+U 1 1 5C774BEA
+P 5295 4220
+F 0 "RD2" V 5195 4220 50  0000 C CNN
+F 1 "20K" V 5290 4215 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5225 4220 50  0001 C CNN
+F 3 "~" H 5295 4220 50  0001 C CNN
+	1    5295 4220
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5665 4500 5665 4595
+Wire Wire Line
+	4620 4095 5520 4095
+Wire Wire Line
+	4620 4395 4665 4395
+Wire Wire Line
+	4785 4220 4665 4220
+Wire Wire Line
+	4665 4220 4665 4395
+Connection ~ 4665 4395
+Wire Wire Line
+	4665 4395 5280 4395
+Wire Wire Line
+	5085 4220 5145 4220
+Wire Wire Line
+	5445 4220 5520 4220
+Wire Wire Line
+	5520 4220 5520 4095
+Connection ~ 5520 4095
+Wire Wire Line
+	5520 4095 5665 4095
+$Comp
+L LTZ1000_PowerSupplyCharger:R RA1
+U 1 1 5B8FB8DF
+P 5320 3515
+F 0 "RA1" V 5215 3515 50  0000 C CNN
+F 1 "200K" V 5315 3515 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5250 3515 50  0001 C CNN
+F 3 "~" H 5320 3515 50  0001 C CNN
+	1    5320 3515
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4620 3795 5320 3795
+Wire Wire Line
+	5320 3665 5320 3795
+Connection ~ 5320 3795
+Wire Wire Line
+	5320 3795 5770 3795
+Text Notes 6260 4305 0    50   ~ 0
+Used resistor values for Ra/Rb/Rc/Rd \nare for charging 4Ah SLA battery when \nall jumpers are connected. 
+Text Notes 7100 6750 0    50   ~ 0
+Open Source Hardware\nSeido CMT - Calibration Measurement Test
+Wire Wire Line
+	8690 3125 8690 3625
+Wire Wire Line
+	8690 3625 8995 3625
+Connection ~ 5085 5335
+Wire Wire Line
+	5085 5335 6535 5335
+Wire Wire Line
+	4775 5335 5085 5335
+Wire Wire Line
+	5085 5335 5085 5505
+Connection ~ 5085 6045
+Wire Wire Line
+	5085 5805 5085 6045
+$EndSCHEMATC

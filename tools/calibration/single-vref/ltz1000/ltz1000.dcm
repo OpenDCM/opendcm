@@ -1,0 +1,64 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C
+D Unpolarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP Conn_01x01
+D Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP D
+D Diode
+K diode
+F ~
+$ENDCMP
+#
+$CMP LED
+D Light emitting diode
+K LED diode
+F ~
+$ENDCMP
+#
+$CMP LT1013
+D Dual opamp
+$ENDCMP
+#
+$CMP LTC1250
+D Single opamp
+$ENDCMP
+#
+$CMP Q_NPN_EBC
+D NPN transistor, emitter/base/collector
+K transistor NPN
+F ~
+$ENDCMP
+#
+$CMP Q_NPN_ECB
+D NPN Transistor, ECB pinout
+F transistors/bipolar/*.*
+$ENDCMP
+#
+$CMP R
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP R_FOIL
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP R_FOIL_DIVIDER
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+#End Doc Library
