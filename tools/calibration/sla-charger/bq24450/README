@@ -1,0 +1,23 @@
+PCB for SLA Battery charger using TI BQ24450 IC.
+- Implemention of Fig.8 schematics from the datasheet.
+- Using Darlington transistor
+- Spreadsheet for resisors calculation and power dissipation estimation.
+- Under Voltage Detection (UVD)
+- Power On / Charging / UVD LEDs
+
+ChangeLog:
+
+Rev. C (14 April 2019)
+- Fixed issue when the power is switched on and the battery is in floating mode only.
+  The issue was resolved with adding 1uF capacitor accross the Rdx resistors.
+- Changed Under Voltage Detector resistors divider values to fullfill >100uA requirement from the TC54 datasheet 
+
+Rev. B (22 March 2018)
+- Fixed missing connection between Vin and LED supply rail
+- Decreased sense resistors to 3 only.
+- Decreased PCB size
+- Added double resistors for fine addjustments 
+
+Rev. A (21 December 2018)
+Prototype initial revision with 7 sense resistors. This version was not stored into the github.
+
