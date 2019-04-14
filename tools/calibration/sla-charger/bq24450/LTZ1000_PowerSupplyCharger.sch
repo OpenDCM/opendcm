@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:LTZ1000_PowerSupplyCharger-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -184,17 +183,6 @@ Wire Wire Line
 	7675 5510 7675 5675
 Text GLabel 6395 2950 2    50   Input ~ 0
 VBatt
-$Comp
-L LTZ1000_PowerSupplyCharger:R RD1
-U 1 1 5B90D645
-P 4935 4220
-F 0 "RD1" V 5025 4220 50  0000 C CNN
-F 1 "430K" V 4930 4215 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 4865 4220 50  0001 C CNN
-F 3 "~" H 4935 4220 50  0001 C CNN
-	1    4935 4220
-	0    -1   1    0   
-$EndComp
 Text GLabel 5280 4495 2    50   Input ~ 0
 STAT2
 Text GLabel 5280 4395 2    50   Input ~ 0
@@ -794,7 +782,7 @@ L LTZ1000_PowerSupplyCharger:R R10
 U 1 1 5C10343F
 P 5085 5655
 F 0 "R10" V 4878 5655 50  0000 C CNN
-F 1 "91K" V 4969 5655 50  0000 C CNN
+F 1 "45.3K" V 4969 5655 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 5015 5655 50  0001 C CNN
 F 3 "~" H 5085 5655 50  0001 C CNN
 	1    5085 5655
@@ -805,7 +793,7 @@ L LTZ1000_PowerSupplyCharger:R R11
 U 1 1 5C1034F5
 P 5085 6270
 F 0 "R11" V 4878 6270 50  0000 C CNN
-F 1 "68K" V 4969 6270 50  0000 C CNN
+F 1 "28K" V 4969 6270 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 5015 6270 50  0001 C CNN
 F 3 "~" H 5085 6270 50  0001 C CNN
 	1    5085 6270
@@ -870,7 +858,7 @@ Wire Wire Line
 Wire Wire Line
 	6535 5335 6535 5355
 Text Notes 5395 5175 0    50   ~ 0
-UnderVoltageDetection
+UnderVoltageDetection : appr. 11.78V
 Wire Wire Line
 	3170 2250 3170 2980
 Wire Wire Line
@@ -1148,16 +1136,9 @@ $EndComp
 Wire Wire Line
 	5665 4500 5665 4595
 Wire Wire Line
-	4620 4095 5520 4095
+	4620 4095 4670 4095
 Wire Wire Line
-	4620 4395 4665 4395
-Wire Wire Line
-	4785 4220 4665 4220
-Wire Wire Line
-	4665 4220 4665 4395
-Connection ~ 4665 4395
-Wire Wire Line
-	4665 4395 5280 4395
+	4785 4220 4780 4220
 Wire Wire Line
 	5085 4220 5145 4220
 Wire Wire Line
@@ -1203,4 +1184,39 @@ Wire Wire Line
 Connection ~ 5085 6045
 Wire Wire Line
 	5085 5805 5085 6045
+$Comp
+L LTZ1000_PowerSupplyCharger:C C1
+U 1 1 5CB4060C
+P 4670 4245
+F 0 "C1" H 4455 4300 50  0000 L CNN
+F 1 "1uF" H 4425 4215 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4708 4095 50  0001 C CNN
+F 3 "~" H 4670 4245 50  0001 C CNN
+	1    4670 4245
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:R RD1
+U 1 1 5B90D645
+P 4935 4220
+F 0 "RD1" V 5025 4220 50  0000 C CNN
+F 1 "430K" V 4930 4215 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4865 4220 50  0001 C CNN
+F 3 "~" H 4935 4220 50  0001 C CNN
+	1    4935 4220
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4620 4395 4670 4395
+Wire Wire Line
+	4780 4220 4780 4395
+Connection ~ 4780 4395
+Wire Wire Line
+	4780 4395 5280 4395
+Connection ~ 4670 4095
+Wire Wire Line
+	4670 4095 5520 4095
+Connection ~ 4670 4395
+Wire Wire Line
+	4670 4395 4780 4395
 $EndSCHEMATC
