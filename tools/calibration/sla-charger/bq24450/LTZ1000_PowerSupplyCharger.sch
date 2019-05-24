@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:LTZ1000_PowerSupplyCharger-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -75,15 +76,11 @@ Wire Wire Line
 Wire Wire Line
 	2175 4095 2220 4095
 Wire Wire Line
-	2020 3235 2770 3235
-Wire Wire Line
 	1085 3555 1170 3555
 Wire Wire Line
 	1170 3555 1170 3690
 Wire Wire Line
 	2020 3455 2020 3235
-Wire Wire Line
-	2770 3235 2770 3295
 $Comp
 L LTZ1000_PowerSupplyCharger:Q_PNP_BCE Q3
 U 1 1 5B8F4880
@@ -95,9 +92,6 @@ F 3 "~" H 3470 2350 50  0001 C CNN
 	1    3470 2350
 	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	2770 3235 2770 3155
-Connection ~ 2770 3235
 Wire Wire Line
 	2075 4880 2075 4595
 Wire Wire Line
@@ -550,34 +544,34 @@ Wire Wire Line
 $Comp
 L LTZ1000_PowerSupplyCharger:R Rs3
 U 1 1 5C0FB19D
-P 1975 2965
-F 0 "Rs3" V 2075 2965 50  0000 C CNN
-F 1 "0R68" V 1970 2970 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 1905 2965 50  0001 C CNN
-F 3 "~" H 1975 2965 50  0001 C CNN
-	1    1975 2965
+P 2665 2595
+F 0 "Rs3" V 2665 2870 50  0000 C CNN
+F 1 "0R68" V 2660 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2595 2595 50  0001 C CNN
+F 3 "~" H 2665 2595 50  0001 C CNN
+	1    2665 2595
 	0    1    1    0   
 $EndComp
 $Comp
 L LTZ1000_PowerSupplyCharger:R Rs2
 U 1 1 5C102F24
-P 1970 2780
-F 0 "Rs2" V 2065 2795 50  0000 C CNN
-F 1 "0R68" V 1970 2785 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 1900 2780 50  0001 C CNN
-F 3 "~" H 1970 2780 50  0001 C CNN
-	1    1970 2780
+P 2665 2495
+F 0 "Rs2" V 2665 2770 50  0000 C CNN
+F 1 "0R68" V 2665 2500 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2595 2495 50  0001 C CNN
+F 3 "~" H 2665 2495 50  0001 C CNN
+	1    2665 2495
 	0    1    1    0   
 $EndComp
 $Comp
 L LTZ1000_PowerSupplyCharger:R Rs1
 U 1 1 5C103016
-P 1970 2590
-F 0 "Rs1" V 2060 2600 50  0000 C CNN
-F 1 "0R68" V 1970 2595 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 1900 2590 50  0001 C CNN
-F 3 "~" H 1970 2590 50  0001 C CNN
-	1    1970 2590
+P 2665 2395
+F 0 "Rs1" V 2665 2670 50  0000 C CNN
+F 1 "0R68" V 2665 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2595 2395 50  0001 C CNN
+F 3 "~" H 2665 2395 50  0001 C CNN
+	1    2665 2395
 	0    1    1    0   
 $EndComp
 $Comp
@@ -650,9 +644,9 @@ Wire Wire Line
 	7875 2925 7410 2925
 Connection ~ 7410 2925
 Wire Wire Line
-	1085 3455 1450 3455
+	1085 3455 1100 3455
 Text Notes 730  3810 0    50   ~ 0
-Vinput\n17-21V
+Vinput\n19-22V
 Text Notes 10720 3195 0    50   ~ 0
 Load\nconnector
 Wire Wire Line
@@ -677,12 +671,12 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J2
 U 1 1 5C467336
-P 2445 2815
-F 0 "J2" H 2495 3140 50  0000 C CNN
-F 1 "Charging" H 2495 3141 50  0001 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 2445 2815 50  0001 C CNN
-F 3 "~" H 2445 2815 50  0001 C CNN
-	1    2445 2815
+P 2180 2495
+F 0 "J2" H 2230 2820 50  0000 C CNN
+F 1 "Charging" H 2230 2821 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 2180 2495 50  0001 C CNN
+F 3 "~" H 2180 2495 50  0001 C CNN
+	1    2180 2495
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -694,17 +688,6 @@ F 1 "PowerDispersion" H 3795 3141 50  0001 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 3745 2815 50  0001 C CNN
 F 3 "~" H 3745 2815 50  0001 C CNN
 	1    3745 2815
-	1    0    0    -1  
-$EndComp
-$Comp
-L LTZ1000_PowerSupplyCharger:BQ24450 U1
-U 1 1 5B8AD5CF
-P 2520 3945
-F 0 "U1" H 3420 3115 60  0000 C CNN
-F 1 "BQ24450" H 3420 3009 60  0000 C CNN
-F 2 "LTZ1000_PowerSupplyCharger:SOIC-16" H 3420 2903 60  0000 C CNN
-F 3 "" H 2520 3945 60  0000 C CNN
-	1    2520 3945
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -731,39 +714,6 @@ Wire Wire Line
 	4440 2580 4590 2580
 Wire Wire Line
 	3770 3265 3545 3265
-Wire Wire Line
-	1750 3155 2770 3155
-Wire Wire Line
-	1750 2965 1825 2965
-Wire Wire Line
-	1750 2965 1750 2780
-Wire Wire Line
-	1750 2780 1820 2780
-Wire Wire Line
-	1750 2780 1750 2590
-Wire Wire Line
-	1750 2590 1820 2590
-Connection ~ 1750 2780
-Wire Wire Line
-	2120 2590 2185 2590
-Wire Wire Line
-	2185 2590 2185 2715
-Wire Wire Line
-	2185 2715 2245 2715
-Wire Wire Line
-	2120 2780 2120 2815
-Wire Wire Line
-	2120 2815 2245 2815
-Wire Wire Line
-	2125 2965 2125 2915
-Wire Wire Line
-	2125 2915 2245 2915
-Wire Wire Line
-	2745 2715 2745 2815
-Connection ~ 2745 2815
-Connection ~ 3070 2980
-Wire Wire Line
-	3070 2980 3070 3295
 Text GLabel 4775 5335 0    50   Input ~ 0
 VBatt
 $Comp
@@ -859,13 +809,6 @@ Wire Wire Line
 	6535 5335 6535 5355
 Text Notes 5395 5175 0    50   ~ 0
 UnderVoltageDetection : appr. 11.78V
-Wire Wire Line
-	3170 2250 3170 2980
-Wire Wire Line
-	3070 2980 3170 2980
-Connection ~ 3170 2980
-Wire Wire Line
-	3170 2980 3170 3295
 $Comp
 L LTZ1000_PowerSupplyCharger:C C5
 U 1 1 5C1C4481
@@ -1020,8 +963,6 @@ F 3 "~" H 9520 5635 50  0001 C CNN
 	1    9520 5635
 	1    0    0    -1  
 $EndComp
-Text GLabel 2765 2540 2    50   Input ~ 0
-Charge
 $Comp
 L LTZ1000_PowerSupplyCharger:D2 D2
 U 1 1 5C1C9976
@@ -1039,22 +980,6 @@ Text GLabel 1975 3235 0    50   Input ~ 0
 Vin
 Wire Wire Line
 	1975 3235 2020 3235
-Connection ~ 2020 3235
-Wire Wire Line
-	2765 2540 2745 2540
-Wire Wire Line
-	2745 2540 2745 2715
-Connection ~ 2745 2715
-Wire Wire Line
-	1750 2965 1750 3155
-Connection ~ 1750 2965
-Wire Wire Line
-	2745 2915 3070 2915
-Connection ~ 2745 2915
-Wire Wire Line
-	3070 2915 3070 2980
-Wire Wire Line
-	2745 2815 2745 2915
 Wire Wire Line
 	3545 2915 3545 3265
 Connection ~ 4590 2770
@@ -1136,8 +1061,6 @@ $EndComp
 Wire Wire Line
 	5665 4500 5665 4595
 Wire Wire Line
-	4620 4095 4670 4095
-Wire Wire Line
 	4785 4220 4780 4220
 Wire Wire Line
 	5085 4220 5145 4220
@@ -1185,17 +1108,6 @@ Connection ~ 5085 6045
 Wire Wire Line
 	5085 5805 5085 6045
 $Comp
-L LTZ1000_PowerSupplyCharger:C C1
-U 1 1 5CB4060C
-P 4670 4245
-F 0 "C1" H 4455 4300 50  0000 L CNN
-F 1 "1uF" H 4425 4215 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4708 4095 50  0001 C CNN
-F 3 "~" H 4670 4245 50  0001 C CNN
-	1    4670 4245
-	1    0    0    -1  
-$EndComp
-$Comp
 L LTZ1000_PowerSupplyCharger:R RD1
 U 1 1 5B90D645
 P 4935 4220
@@ -1207,16 +1119,148 @@ F 3 "~" H 4935 4220 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	4620 4395 4670 4395
-Wire Wire Line
 	4780 4220 4780 4395
 Connection ~ 4780 4395
 Wire Wire Line
 	4780 4395 5280 4395
-Connection ~ 4670 4095
+$Comp
+L LTZ1000_PowerSupplyCharger:D D3
+U 1 1 5CE957DD
+P 1250 3455
+F 0 "D3" H 1250 3239 50  0000 C CNN
+F 1 "D" H 1250 3330 50  0000 C CNN
+F 2 "LTZ1000_PowerSupplyCharger:D_SMB" H 1250 3455 50  0001 C CNN
+F 3 "~" H 1250 3455 50  0001 C CNN
+	1    1250 3455
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	4670 4095 5520 4095
-Connection ~ 4670 4395
+	1400 3455 1450 3455
+$Comp
+L LTZ1000_PowerSupplyCharger:BQ24450 U1
+U 1 1 5B8AD5CF
+P 2520 3945
+F 0 "U1" H 3420 3115 60  0000 C CNN
+F 1 "BQ24450" H 3420 3009 60  0000 C CNN
+F 2 "LTZ1000_PowerSupplyCharger:SOIC-16" H 3420 2903 60  0000 C CNN
+F 3 "" H 2520 3945 60  0000 C CNN
+	1    2520 3945
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:R Rdef1
+U 1 1 5CF306CD
+P 1945 2805
+F 0 "Rdef1" V 2045 2805 50  0000 C CNN
+F 1 "0R" V 1940 2810 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1875 2805 50  0001 C CNN
+F 3 "~" H 1945 2805 50  0001 C CNN
+	1    1945 2805
+	-1   0    0    1   
+$EndComp
+$Comp
+L LTZ1000_PowerSupplyCharger:R Rdiff1
+U 1 1 5CF30CDA
+P 2970 2015
+F 0 "Rdiff1" V 3070 2015 50  0000 C CNN
+F 1 "0R" V 2965 2020 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2900 2015 50  0001 C CNN
+F 3 "~" H 2970 2015 50  0001 C CNN
+	1    2970 2015
+	0    -1   -1   0   
+$EndComp
+Text Notes 640  2895 0    50   ~ 0
+Default tapper current\nI tapper = 10% from I max charge\n\nRtap - unpopulated\nRdiff - unpopulated\nRdef1,2 - 0R\n\n\n\nDifferent tapper current\nI tapper = Visns / Rtap\n\nRtap - populated\nRdef1,2 - unpopulated\nRdiff - 0R\n
 Wire Wire Line
-	4670 4395 4780 4395
+	3070 2780 3070 3235
+Wire Wire Line
+	3070 3235 3070 3295
+Connection ~ 3070 3235
+$Comp
+L LTZ1000_PowerSupplyCharger:R Rtap1
+U 1 1 5CEA4A8F
+P 2920 3235
+F 0 "Rtap1" V 3020 3235 50  0000 C CNN
+F 1 "0R" V 2915 3240 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2850 3235 50  0001 C CNN
+F 3 "~" H 2920 3235 50  0001 C CNN
+	1    2920 3235
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2770 3295 2770 3235
+Wire Wire Line
+	2770 3235 2770 3045
+Connection ~ 2770 3235
+Wire Wire Line
+	2020 3235 2770 3235
+Connection ~ 2020 3235
+$Comp
+L LTZ1000_PowerSupplyCharger:R Rdef2
+U 1 1 5CED1F20
+P 2975 2250
+F 0 "Rdef2" V 3075 2250 50  0000 C CNN
+F 1 "0R" V 2970 2255 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2905 2250 50  0001 C CNN
+F 3 "~" H 2975 2250 50  0001 C CNN
+	1    2975 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3120 2015 3170 2015
+Wire Wire Line
+	2480 2395 2515 2395
+Wire Wire Line
+	2480 2495 2515 2495
+Wire Wire Line
+	2480 2595 2515 2595
+Wire Wire Line
+	1945 2955 1945 3045
+Wire Wire Line
+	1945 3045 2770 3045
+Wire Wire Line
+	1945 2655 1945 2595
+Wire Wire Line
+	1945 2595 1980 2595
+Wire Wire Line
+	1945 2595 1945 2495
+Wire Wire Line
+	1945 2495 1980 2495
+Connection ~ 1945 2595
+Wire Wire Line
+	1945 2395 1980 2395
+Wire Wire Line
+	1945 2395 1945 2495
+Connection ~ 1945 2495
+Wire Wire Line
+	1945 2015 1945 2395
+Wire Wire Line
+	1945 2015 2820 2015
+Connection ~ 1945 2395
+Wire Wire Line
+	2815 2780 2815 2595
+Wire Wire Line
+	2815 2780 3070 2780
+Wire Wire Line
+	2815 2595 2815 2495
+Connection ~ 2815 2595
+Wire Wire Line
+	2815 2495 2815 2395
+Connection ~ 2815 2495
+Wire Wire Line
+	2815 2395 2815 2250
+Wire Wire Line
+	2815 2250 2825 2250
+Connection ~ 2815 2395
+Wire Wire Line
+	3170 2015 3170 2250
+Wire Wire Line
+	3125 2250 3170 2250
+Connection ~ 3170 2250
+Wire Wire Line
+	3170 2250 3170 3295
+Wire Wire Line
+	4620 4095 5520 4095
+Wire Wire Line
+	4620 4395 4780 4395
 $EndSCHEMATC
