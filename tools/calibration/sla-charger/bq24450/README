@@ -1,18 +1,29 @@
 PCB for SLA Battery charger using TI BQ24450 IC.
 
-- Implemention of Fig. 8 schematics taken from the IC datasheet.
+- Implemention of Fig. 8 and 9a schematics taken from the IC datasheet.
 - Darlington transistor.
 - Spreadsheet for resisors calculation and power dissipation estimation.
 - Under Voltage Detection (UVD).
+- Input polarity protection.
 - LDO output.
 - Power On / Charging / UVD LEDs.
 
 ChangeLog:
 
+Rev. D (24 May 2019)
+- Added polarity protection.
+- Added schematics for custom I tapper value (not the defualt one 10% from charging current).
+   This will allow the PCB to be used in the cases when a load is permanently connected to the battery.
+- Updated the calculation document.
+- Removed the capacitor from the rev. C.
+- Increased tracks width.
+This version of the PCB is not yet produced and tested.
+
 Rev. C (14 April 2019)
 - Fixed issue when the power is switched on and the battery is in floating mode only.
   The issue was resolved with adding 1uF capacitor accross the Rdx resistors.
 - Changed Under Voltage Detector resistors divider values to fullfill >100uA requirement from the TC54 datasheet 
+This version of the PCB is not yet produced and tested.
 
 Rev. B (22 March 2018)
 - Fixed missing connection between Vin and LED supply rail
