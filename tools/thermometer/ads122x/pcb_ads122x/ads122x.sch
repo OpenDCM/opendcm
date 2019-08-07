@@ -1,0 +1,800 @@
+EESchema Schematic File Version 4
+LIBS:ads122x-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ads122x:ads122x U1
+U 1 1 5CBC5378
+P 5345 4605
+F 0 "U1" H 5342 5491 50  0000 C CNN
+F 1 "ads122x" H 5342 5400 50  0000 C CNN
+F 2 "ads122x:TSSOP-16_4.4x5mm_Pitch0.65mm" H 5345 4605 50  0001 C CNN
+F 3 "" H 5345 4605 50  0001 C CNN
+	1    5345 4605
+	1    0    0    -1  
+$EndComp
+$Comp
+L ads122x:GND #PWR08
+U 1 1 5CBCA622
+P 5495 5390
+F 0 "#PWR08" H 5495 5140 50  0001 C CNN
+F 1 "GND" H 5500 5217 50  0000 C CNN
+F 2 "" H 5495 5390 50  0001 C CNN
+F 3 "" H 5495 5390 50  0001 C CNN
+	1    5495 5390
+	1    0    0    -1  
+$EndComp
+$Comp
+L ads122x:C C5
+U 1 1 5CBCCBA5
+P 4190 5220
+F 0 "C5" V 3961 5220 50  0000 C CNN
+F 1 "C" V 4052 5220 50  0000 C CNN
+F 2 "ads122x:0805" H 4190 5220 50  0001 C CNN
+F 3 "~" H 4190 5220 50  0001 C CNN
+	1    4190 5220
+	0    1    1    0   
+$EndComp
+$Comp
+L ads122x:C C6
+U 1 1 5CBCD94B
+P 4520 5405
+F 0 "C6" H 4428 5359 50  0000 R CNN
+F 1 "C" H 4428 5450 50  0000 R CNN
+F 2 "ads122x:0805" H 4520 5405 50  0001 C CNN
+F 3 "~" H 4520 5405 50  0001 C CNN
+	1    4520 5405
+	-1   0    0    1   
+$EndComp
+$Comp
+L ads122x:C C4
+U 1 1 5CBCE9C9
+P 3820 5435
+F 0 "C4" H 3728 5389 50  0000 R CNN
+F 1 "C" H 3728 5480 50  0000 R CNN
+F 2 "ads122x:0805" H 3820 5435 50  0001 C CNN
+F 3 "~" H 3820 5435 50  0001 C CNN
+	1    3820 5435
+	-1   0    0    1   
+$EndComp
+$Comp
+L ads122x:GNDA #PWR04
+U 1 1 5CBCF3B3
+P 3820 5650
+F 0 "#PWR04" H 3820 5400 50  0001 C CNN
+F 1 "GNDA" H 3825 5477 50  0000 C CNN
+F 2 "" H 3820 5650 50  0001 C CNN
+F 3 "" H 3820 5650 50  0001 C CNN
+	1    3820 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L ads122x:GNDA #PWR07
+U 1 1 5CBCFAD8
+P 5190 5395
+F 0 "#PWR07" H 5190 5145 50  0001 C CNN
+F 1 "GNDA" H 5195 5222 50  0000 C CNN
+F 2 "" H 5190 5395 50  0001 C CNN
+F 3 "" H 5190 5395 50  0001 C CNN
+	1    5190 5395
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5190 5305 5190 5395
+Wire Wire Line
+	5495 5305 5495 5390
+Wire Wire Line
+	3820 5220 3820 5335
+Wire Wire Line
+	3820 5535 3820 5650
+Wire Wire Line
+	4520 5220 4520 5305
+$Comp
+L ads122x:GNDA #PWR05
+U 1 1 5CBD14B4
+P 4520 5655
+F 0 "#PWR05" H 4520 5405 50  0001 C CNN
+F 1 "GNDA" H 4525 5482 50  0000 C CNN
+F 2 "" H 4520 5655 50  0001 C CNN
+F 3 "" H 4520 5655 50  0001 C CNN
+	1    4520 5655
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4520 5505 4520 5655
+$Comp
+L ads122x:R R3
+U 1 1 5CBD1B9D
+P 4030 5675
+F 0 "R3" H 4089 5721 50  0000 L CNN
+F 1 "R" H 4089 5630 50  0000 L CNN
+F 2 "ads122x:0805" H 4030 5675 50  0001 C CNN
+F 3 "~" H 4030 5675 50  0001 C CNN
+	1    4030 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L ads122x:R R6
+U 1 1 5CBD24A9
+P 4335 5675
+F 0 "R6" H 4394 5721 50  0000 L CNN
+F 1 "R" H 4394 5630 50  0000 L CNN
+F 2 "ads122x:0805" H 4335 5675 50  0001 C CNN
+F 3 "~" H 4335 5675 50  0001 C CNN
+	1    4335 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L ads122x:R R5
+U 1 1 5CBD292B
+P 4180 5975
+F 0 "R5" V 4270 5975 50  0000 C CNN
+F 1 "R" V 4180 5970 50  0000 C CNN
+F 2 "ads122x:0805" H 4180 5975 50  0001 C CNN
+F 3 "~" H 4180 5975 50  0001 C CNN
+	1    4180 5975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4030 5575 4030 5220
+Wire Wire Line
+	4030 5220 4030 5020
+Wire Wire Line
+	4030 4805 4640 4805
+Wire Wire Line
+	4640 4905 4335 4905
+Wire Wire Line
+	4335 4905 4335 5010
+Wire Wire Line
+	4290 5220 4335 5220
+Connection ~ 4335 5220
+Wire Wire Line
+	4335 5220 4335 5575
+Wire Wire Line
+	4335 5220 4520 5220
+Wire Wire Line
+	4030 5975 4080 5975
+Wire Wire Line
+	4280 5975 4335 5975
+Wire Wire Line
+	4030 5775 4030 5875
+$Comp
+L ads122x:C C7
+U 1 1 5CBD4AA5
+P 4745 3770
+F 0 "C7" H 4653 3724 50  0000 R CNN
+F 1 "C" H 4653 3815 50  0000 R CNN
+F 2 "ads122x:0805" H 4745 3770 50  0001 C CNN
+F 3 "~" H 4745 3770 50  0001 C CNN
+	1    4745 3770
+	-1   0    0    1   
+$EndComp
+$Comp
+L ads122x:GNDA #PWR06
+U 1 1 5CBD555A
+P 4745 3895
+F 0 "#PWR06" H 4745 3645 50  0001 C CNN
+F 1 "GNDA" H 4750 3722 50  0000 C CNN
+F 2 "" H 4745 3895 50  0001 C CNN
+F 3 "" H 4745 3895 50  0001 C CNN
+	1    4745 3895
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4745 3870 4745 3895
+Wire Wire Line
+	4745 3670 4745 3575
+Wire Wire Line
+	4745 3575 5045 3575
+$Comp
+L ads122x:Conn_01x02 J6
+U 1 1 5CBEE29C
+P 8425 1695
+F 0 "J6" H 8505 1687 50  0000 L CNN
+F 1 "Digital Supply" H 8505 1596 50  0000 L CNN
+F 2 "ads122x:Pin_Header_Straight_1x02_Pitch2.54mm" H 8425 1695 50  0001 C CNN
+F 3 "~" H 8425 1695 50  0001 C CNN
+	1    8425 1695
+	1    0    0    -1  
+$EndComp
+$Comp
+L ads122x:C C3
+U 1 1 5CBF00A8
+P 3420 4845
+F 0 "C3" H 3395 4770 50  0000 R CNN
+F 1 "C" H 3380 4925 50  0000 R CNN
+F 2 "ads122x:0805" H 3420 4845 50  0001 C CNN
+F 3 "~" H 3420 4845 50  0001 C CNN
+	1    3420 4845
+	-1   0    0    1   
+$EndComp
+$Comp
+L ads122x:C C1
+U 1 1 5CBF0ADF
+P 3420 4045
+F 0 "C1" H 3328 3999 50  0000 R CNN
+F 1 "C" H 3328 4090 50  0000 R CNN
+F 2 "ads122x:0805" H 3420 4045 50  0001 C CNN
+F 3 "~" H 3420 4045 50  0001 C CNN
+	1    3420 4045
+	-1   0    0    1   
+$EndComp
+$Comp
+L ads122x:GNDA #PWR02
+U 1 1 5CBF0FE7
+P 3420 5015
+F 0 "#PWR02" H 3420 4765 50  0001 C CNN
+F 1 "GNDA" H 3425 4842 50  0000 C CNN
+F 2 "" H 3420 5015 50  0001 C CNN
+F 3 "" H 3420 5015 50  0001 C CNN
+	1    3420 5015
+	1    0    0    -1  
+$EndComp
+$Comp
+L ads122x:GNDA #PWR01
+U 1 1 5CBF1488
+P 3420 3855
+F 0 "#PWR01" H 3420 3605 50  0001 C CNN
+F 1 "GNDA" H 3425 3682 50  0000 C CNN
+F 2 "" H 3420 3855 50  0001 C CNN
+F 3 "" H 3420 3855 50  0001 C CNN
+	1    3420 3855
+	-1   0    0    1   
+$EndComp
+$Comp
+L ads122x:R R1
+U 1 1 5CBF2119
+P 3165 4600
+F 0 "R1" V 2969 4600 50  0000 C CNN
+F 1 "R" V 3060 4600 50  0000 C CNN
+F 2 "ads122x:0805" H 3165 4600 50  0001 C CNN
+F 3 "~" H 3165 4600 50  0001 C CNN
+	1    3165 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L ads122x:R R2
+U 1 1 5CBF1A22
+P 3175 4245
+F 0 "R2" V 3371 4245 50  0000 C CNN
+F 1 "R" V 3280 4245 50  0000 C CNN
+F 2 "ads122x:0805" H 3175 4245 50  0001 C CNN
+F 3 "~" H 3175 4245 50  0001 C CNN
+	1    3175 4245
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3420 4145 3420 4245
+Wire Wire Line
+	3420 3855 3420 3945
+Wire Wire Line
+	3420 4945 3420 5015
+Connection ~ 3420 4245
+Wire Wire Line
+	3420 4245 3420 4315
+Wire Wire Line
+	4445 4405 4445 4245
+Wire Wire Line
+	4445 4245 4055 4245
+Wire Wire Line
+	3420 4515 3420 4600
+Wire Wire Line
+	4640 4405 4445 4405
+$Comp
+L ads122x:C C2
+U 1 1 5CBEF234
+P 3420 4415
+F 0 "C2" H 3328 4369 50  0000 R CNN
+F 1 "C" H 3328 4460 50  0000 R CNN
+F 2 "ads122x:0805" H 3420 4415 50  0001 C CNN
+F 3 "~" H 3420 4415 50  0001 C CNN
+	1    3420 4415
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3420 4245 3275 4245
+Wire Wire Line
+	4640 4505 4445 4505
+Wire Wire Line
+	4445 4505 4445 4600
+Wire Wire Line
+	4445 4600 4050 4600
+Connection ~ 3420 4600
+Wire Wire Line
+	3420 4600 3420 4745
+Wire Wire Line
+	3265 4600 3420 4600
+Wire Wire Line
+	2900 4380 2900 4245
+Wire Wire Line
+	2900 4245 3075 4245
+Wire Wire Line
+	2900 4480 2900 4600
+Wire Wire Line
+	2900 4600 3065 4600
+Text Notes 950  4455 0    50   ~ 0
+Sense Output
+Wire Wire Line
+	3670 5365 3220 5365
+Wire Wire Line
+	2370 5365 2370 5040
+Wire Wire Line
+	4640 4705 3670 4705
+Wire Wire Line
+	3670 4705 3670 5365
+$Comp
+L ads122x:C C8
+U 1 1 5CC16B65
+P 5965 3770
+F 0 "C8" H 5873 3724 50  0000 R CNN
+F 1 "C" H 5873 3815 50  0000 R CNN
+F 2 "ads122x:0805" H 5965 3770 50  0001 C CNN
+F 3 "~" H 5965 3770 50  0001 C CNN
+	1    5965 3770
+	-1   0    0    1   
+$EndComp
+$Comp
+L ads122x:GND #PWR09
+U 1 1 5CC1761A
+P 5965 3895
+F 0 "#PWR09" H 5965 3645 50  0001 C CNN
+F 1 "GND" H 5970 3722 50  0000 C CNN
+F 2 "" H 5965 3895 50  0001 C CNN
+F 3 "" H 5965 3895 50  0001 C CNN
+	1    5965 3895
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5965 3870 5965 3895
+Wire Wire Line
+	5965 3585 5965 3670
+$Comp
+L ads122x:GND #PWR010
+U 1 1 5CC2AD8E
+P 8040 1980
+F 0 "#PWR010" H 8040 1730 50  0001 C CNN
+F 1 "GND" H 8045 1807 50  0000 C CNN
+F 2 "" H 8040 1980 50  0001 C CNN
+F 3 "" H 8040 1980 50  0001 C CNN
+	1    8040 1980
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7080 4905 7100 4905
+Wire Wire Line
+	6045 4905 6880 4905
+Wire Wire Line
+	8040 1980 8040 1795
+Wire Wire Line
+	8040 1795 8225 1795
+Wire Wire Line
+	7845 1795 8040 1795
+Connection ~ 8040 1795
+Wire Wire Line
+	8040 1695 8225 1695
+$Comp
+L ads122x:R R11
+U 1 1 5CC35BD9
+P 6980 4905
+F 0 "R11" V 6980 4905 50  0000 C CNN
+F 1 "R" V 7060 4900 50  0000 C CNN
+F 2 "ads122x:0805" H 6980 4905 50  0001 C CNN
+F 3 "~" H 6980 4905 50  0001 C CNN
+	1    6980 4905
+	0    1    1    0   
+$EndComp
+$Comp
+L ads122x:Conn_01x02 J1
+U 1 1 5CC13D54
+P 1600 5140
+F 0 "J1" H 1515 5295 50  0000 L CNN
+F 1 "Conn_01x02" H 1680 5041 50  0001 L CNN
+F 2 "ads122x:PCB_Terminal_2_2.54" H 1600 5140 50  0001 C CNN
+F 3 "~" H 1600 5140 50  0001 C CNN
+	1    1600 5140
+	-1   0    0    1   
+$EndComp
+$Comp
+L ads122x:Conn_01x02 J2
+U 1 1 5CC14FA8
+P 1610 4480
+F 0 "J2" H 1510 4240 50  0000 L CNN
+F 1 "Conn_01x02" H 1690 4381 50  0001 L CNN
+F 2 "ads122x:PCB_Terminal_2_2.54" H 1610 4480 50  0001 C CNN
+F 3 "~" H 1610 4480 50  0001 C CNN
+	1    1610 4480
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1810 4380 2080 4380
+Wire Wire Line
+	1810 4480 2180 4480
+Wire Wire Line
+	1800 5040 2180 5040
+Wire Wire Line
+	1800 5140 2080 5140
+Text Notes 940  5110 0    50   ~ 0
+Force Output
+$Comp
+L ads122x:Conn_02x02_Odd_Even J3
+U 1 1 5CC26986
+P 2180 4720
+F 0 "J3" V 2245 4320 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 2230 4846 50  0001 C CNN
+F 2 "ads122x:Pin_Header_Straight_2x02_Pitch2.54mm" H 2180 4720 50  0001 C CNN
+F 3 "~" H 2180 4720 50  0001 C CNN
+	1    2180 4720
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2180 5020 2180 5040
+Connection ~ 2180 5040
+Wire Wire Line
+	2180 5040 2370 5040
+Wire Wire Line
+	2080 5020 2080 5140
+Connection ~ 2080 5140
+Wire Wire Line
+	2080 5140 2270 5140
+Wire Wire Line
+	2180 4520 2180 4480
+Connection ~ 2180 4480
+Wire Wire Line
+	2180 4480 2520 4480
+Wire Wire Line
+	2080 4520 2080 4380
+Connection ~ 2080 4380
+Wire Wire Line
+	2080 4380 2900 4380
+Text Notes 620  4860 0    50   ~ 0
+2W mode : short 1-2 and 3-4 \n3W mode : open all\n4W mode : open all
+Wire Wire Line
+	3820 5220 4030 5220
+Connection ~ 4030 5220
+Wire Wire Line
+	4030 5220 4090 5220
+$Comp
+L ads122x:GNDA #PWR03
+U 1 1 5CBD4094
+P 3775 6070
+F 0 "#PWR03" H 3775 5820 50  0001 C CNN
+F 1 "GNDA" H 3780 5897 50  0000 C CNN
+F 2 "" H 3775 6070 50  0001 C CNN
+F 3 "" H 3775 6070 50  0001 C CNN
+	1    3775 6070
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3775 6070 3775 5975
+Wire Wire Line
+	3775 5975 4030 5975
+Connection ~ 4030 5975
+Wire Wire Line
+	4335 5975 4535 5975
+Wire Wire Line
+	4535 5975 4535 6555
+Wire Wire Line
+	4535 6555 2270 6555
+Connection ~ 4335 5975
+Wire Wire Line
+	2270 5140 2270 6555
+Wire Wire Line
+	4030 5975 4030 5970
+$Comp
+L ads122x:R R4
+U 1 1 5CC53976
+P 4180 5875
+F 0 "R4" V 4095 5870 50  0000 C CNN
+F 1 "R" V 4180 5870 50  0000 C CNN
+F 2 "ads122x:Vishay_L7.62mm_D2.67mm_P3.81mm" H 4180 5875 50  0001 C CNN
+F 3 "~" H 4180 5875 50  0001 C CNN
+	1    4180 5875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4080 5875 4030 5875
+Connection ~ 4030 5875
+Wire Wire Line
+	4030 5875 4030 5975
+Wire Wire Line
+	4280 5875 4335 5875
+Wire Wire Line
+	4335 5775 4335 5875
+Connection ~ 4335 5875
+Wire Wire Line
+	4335 5875 4335 5975
+$Comp
+L ads122x:Conn_01x02 J4
+U 1 1 5CC766A8
+P 2720 4950
+F 0 "J4" V 2735 4675 50  0000 L CNN
+F 1 "Conn_01x02" H 2800 4851 50  0001 L CNN
+F 2 "ads122x:Pin_Header_Straight_1x02_Pitch2.54mm" H 2720 4950 50  0001 C CNN
+F 3 "~" H 2720 4950 50  0001 C CNN
+	1    2720 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4640 4605 4540 4605
+Wire Wire Line
+	4540 4605 4540 4655
+Wire Wire Line
+	4540 4655 3570 4655
+Wire Wire Line
+	3570 4655 3570 5255
+Wire Wire Line
+	2520 5255 2520 4480
+Connection ~ 2520 4480
+Wire Wire Line
+	2520 4480 2900 4480
+Text Notes 2575 4860 0    50   ~ 0
+3W mode\nShort - ON\nOpen - OFF
+Wire Wire Line
+	5045 3575 5045 3900
+Connection ~ 5045 3575
+$Comp
+L ads122x:Conn_01x02 J7
+U 1 1 5CD32EC9
+P 8430 2585
+F 0 "J7" H 8510 2577 50  0000 L CNN
+F 1 "Analog Supply" H 8510 2486 50  0000 L CNN
+F 2 "ads122x:Pin_Header_Straight_1x02_Pitch2.54mm" H 8430 2585 50  0001 C CNN
+F 3 "~" H 8430 2585 50  0001 C CNN
+	1    8430 2585
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8045 2870 8045 2805
+Wire Wire Line
+	8045 2685 8230 2685
+Wire Wire Line
+	8045 2585 8230 2585
+Wire Wire Line
+	7845 2685 8045 2685
+Wire Wire Line
+	7845 1795 7845 2685
+Connection ~ 8045 2685
+Text Notes 8280 1470 0    50   ~ 0
+Digital Supply\n2.75V - 5V
+Text Notes 8245 2355 0    50   ~ 0
+Analog Supply\n2.75V-5V
+$Comp
+L ads122x:Conn_01x02 J8
+U 1 1 5CD52680
+P 10130 2025
+F 0 "J8" H 10210 2017 50  0000 L CNN
+F 1 "Single Supply" H 10210 1926 50  0000 L CNN
+F 2 "ads122x:Pin_Header_Straight_1x02_Pitch2.54mm" H 10130 2025 50  0001 C CNN
+F 3 "~" H 10130 2025 50  0001 C CNN
+	1    10130 2025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9740 2025 9930 2025
+Wire Wire Line
+	9930 2125 9740 2125
+Wire Wire Line
+	9740 2125 9740 2340
+Text Notes 9970 1625 0    50   ~ 0
+Single/Dual Supply\nOpen - Dual\nShort - Single
+Wire Wire Line
+	5965 3585 5640 3585
+Connection ~ 5640 3585
+Wire Wire Line
+	5640 3585 5640 3905
+Text Notes 7475 7500 0    50   ~ 0
+2/3/4W PT Thermometer using ADS122x
+Text Notes 10605 7640 0    50   ~ 0
+A
+$Comp
+L ads122x:R R9
+U 1 1 5CDCBECE
+P 6675 4705
+F 0 "R9" V 6680 4705 50  0000 C CNN
+F 1 "R" V 6745 4705 50  0000 C CNN
+F 2 "ads122x:0805" H 6675 4705 50  0001 C CNN
+F 3 "~" H 6675 4705 50  0001 C CNN
+	1    6675 4705
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6775 4705 7100 4705
+$Comp
+L ads122x:R R10
+U 1 1 5CDE823B
+P 6835 4805
+F 0 "R10" V 6840 4805 50  0000 C CNN
+F 1 "R" V 6905 4805 50  0000 C CNN
+F 2 "ads122x:0805" H 6835 4805 50  0001 C CNN
+F 3 "~" H 6835 4805 50  0001 C CNN
+	1    6835 4805
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6935 4805 7100 4805
+Text GLabel 8130 2425 2    50   Input ~ 0
+AVDD
+Wire Wire Line
+	8130 2425 8045 2425
+Wire Wire Line
+	8045 2425 8045 2585
+Text GLabel 8105 1535 2    50   Input ~ 0
+DVDD
+Wire Wire Line
+	8105 1535 8040 1535
+Wire Wire Line
+	8040 1535 8040 1695
+Text GLabel 5780 3520 2    50   Input ~ 0
+DVDD
+Wire Wire Line
+	5780 3520 5640 3520
+Text GLabel 5085 3520 2    50   Input ~ 0
+AVDD
+Wire Wire Line
+	5085 3520 5045 3520
+Wire Wire Line
+	5045 3520 5045 3575
+Text GLabel 10005 2340 2    50   Input ~ 0
+AVDD
+Text GLabel 10005 1815 2    50   Input ~ 0
+DVDD
+Wire Wire Line
+	10005 2340 9740 2340
+Wire Wire Line
+	10005 1815 9740 1815
+Wire Wire Line
+	9740 1815 9740 2025
+Text GLabel 7810 2805 0    50   Input ~ 0
+GND
+Wire Wire Line
+	7810 2805 8045 2805
+Connection ~ 8045 2805
+Wire Wire Line
+	8045 2805 8045 2685
+Wire Wire Line
+	5640 3520 5640 3585
+Text GLabel 4055 4135 1    50   Input ~ 0
+AIN0
+Text GLabel 4050 4510 1    50   Input ~ 0
+AIN1
+Wire Wire Line
+	4055 4135 4055 4245
+Connection ~ 4055 4245
+Wire Wire Line
+	4055 4245 3420 4245
+Wire Wire Line
+	4050 4510 4050 4600
+Connection ~ 4050 4600
+Wire Wire Line
+	4050 4600 3420 4600
+Text GLabel 3220 5465 3    50   Input ~ 0
+AIN3
+Wire Wire Line
+	3220 5465 3220 5365
+Connection ~ 3220 5365
+Wire Wire Line
+	3220 5365 2370 5365
+Wire Wire Line
+	2720 5150 2720 5255
+Wire Wire Line
+	2720 5255 2520 5255
+Wire Wire Line
+	2820 5150 2820 5255
+Wire Wire Line
+	2820 5255 3225 5255
+Text GLabel 3225 5160 1    50   Input ~ 0
+AIN2
+Wire Wire Line
+	3225 5160 3225 5255
+Connection ~ 3225 5255
+Wire Wire Line
+	3225 5255 3570 5255
+Text GLabel 3985 5020 0    50   Input ~ 0
+REFN0
+Wire Wire Line
+	3985 5020 4030 5020
+Connection ~ 4030 5020
+Wire Wire Line
+	4030 5020 4030 4805
+Text GLabel 4410 5010 2    50   Input ~ 0
+REFP0
+Wire Wire Line
+	4410 5010 4335 5010
+Connection ~ 4335 5010
+Wire Wire Line
+	4335 5010 4335 5220
+$Comp
+L ads122x:GNDA #PWR011
+U 1 1 5CD418AA
+P 8045 2870
+F 0 "#PWR011" H 8045 2620 50  0001 C CNN
+F 1 "GNDA" H 8050 2697 50  0000 C CNN
+F 2 "" H 8045 2870 50  0001 C CNN
+F 3 "" H 8045 2870 50  0001 C CNN
+	1    8045 2870
+	1    0    0    -1  
+$EndComp
+$Comp
+L ads122x:MountingHole H1
+U 1 1 5CC88C6F
+P 9440 4525
+F 0 "H1" H 9540 4571 50  0000 L CNN
+F 1 "MountingHole" H 9540 4480 50  0000 L CNN
+F 2 "ads122x:MountingHole_3.2mm_M3" H 9440 4525 50  0001 C CNN
+F 3 "~" H 9440 4525 50  0001 C CNN
+	1    9440 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L ads122x:MountingHole H2
+U 1 1 5CC88FFA
+P 9440 4860
+F 0 "H2" H 9540 4906 50  0000 L CNN
+F 1 "MountingHole" H 9540 4815 50  0000 L CNN
+F 2 "ads122x:MountingHole_3.2mm_M3" H 9440 4860 50  0001 C CNN
+F 3 "~" H 9440 4860 50  0001 C CNN
+	1    9440 4860
+	1    0    0    -1  
+$EndComp
+Text Notes 4000 6290 0    50   ~ 0
+Reference \n Resistor
+$Comp
+L ads122x:Conn_01x06 J5
+U 1 1 5CDC02B8
+P 7300 4605
+F 0 "J5" H 7380 4597 50  0000 L CNN
+F 1 "Conn_01x06" H 7380 4506 50  0000 L CNN
+F 2 "ads122x:Pin_Header_Straight_1x06_Pitch2.54mm" H 7300 4605 50  0001 C CNN
+F 3 "~" H 7300 4605 50  0001 C CNN
+	1    7300 4605
+	1    0    0    -1  
+$EndComp
+$Comp
+L ads122x:R R8
+U 1 1 5CC62FFC
+P 6445 4605
+F 0 "R8" V 6450 4605 50  0000 C CNN
+F 1 "R" V 6515 4605 50  0000 C CNN
+F 2 "ads122x:0805" H 6445 4605 50  0001 C CNN
+F 3 "~" H 6445 4605 50  0001 C CNN
+	1    6445 4605
+	0    1    1    0   
+$EndComp
+$Comp
+L ads122x:R R7
+U 1 1 5CC63C35
+P 6185 4505
+F 0 "R7" V 6190 4505 50  0000 C CNN
+F 1 "R" V 6255 4505 50  0000 C CNN
+F 2 "ads122x:0805" H 6185 4505 50  0001 C CNN
+F 3 "~" H 6185 4505 50  0001 C CNN
+	1    6185 4505
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6045 4605 6345 4605
+Wire Wire Line
+	7100 4505 6285 4505
+Wire Wire Line
+	6045 4405 7100 4405
+Wire Wire Line
+	6545 4605 7100 4605
+Wire Wire Line
+	6085 4505 6045 4505
+Wire Wire Line
+	6050 4705 6575 4705
+Wire Wire Line
+	6735 4805 6045 4805
+$EndSCHEMATC
