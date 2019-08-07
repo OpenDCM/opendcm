@@ -14,4 +14,5 @@ The common ground between AVDD and DVDD limits the temperature range to -20 <-> 
 
 The PCB can fit into BERNIC ABS box type 40x. 
 
-<img src="3DModelFront.png" alt="ADS1220 Front End PCB"/>
+<img src="3DModelFront.png" alt="3D model of the PCB"/>
+<img src="first_prototype_pcb.png" alt="First prototype of the PCB"/>
