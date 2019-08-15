@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ads122x-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -797,4 +796,6 @@ Wire Wire Line
 	6050 4705 6575 4705
 Wire Wire Line
 	6735 4805 6045 4805
+Text Notes 4795 6400 0    79   ~ 0
+Values of R1,2,3,4 , C1,2,3,4,5,6 and selection \nof the reference resitor value can be calculated \nfrom the ADS122x_calculator.ods file.
 $EndSCHEMATC
