@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 4w_rr_uni)(type Legacy)(uri ${KIPRJMOD}/4w_rr_uni.lib)(options "")(descr ""))
+  (lib (name 4w_rr_uni-rescue)(type Legacy)(uri ${KIPRJMOD}/4w_rr_uni-rescue.lib)(options "")(descr ""))
+)
