@@ -7,3 +7,4 @@ The first prototype will use :
 - 2 SA404 banana plugs for direct connection to the 10V LTZ1000 Voltage Reference Standard
 - 2 Pomona 3750 binding posts for cable connection to the DMM
 - Low contact DPST switch M2021SS1W01
+The PCB is not yet produced tested. Waiting for parts and the PCB from OSHPark. 
