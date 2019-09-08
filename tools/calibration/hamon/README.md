@@ -11,4 +11,9 @@ The first prototype will use :
 - Low contact DPST switch M2021SS1W01
 
 
-The PCB is not yet produced tested. Waiting for parts and the PCB from OSHPark. 
+The PCB is not yet produced tested. Waiting for parts and the PCB from OSHPark.
+
+Files:<br>
+hamon.kicad\_pcb - hamon divider PCB with 2 banana plugs (SA404) and 2 binding posts.<br>
+hamon\_bp.kicad\_pcb - hamon divider PCB with 4 binding posts.<br>
+Hamon\_calc.ods - spreadsheet for resistor calculation.<br>
