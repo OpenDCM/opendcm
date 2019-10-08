@@ -8,10 +8,10 @@ The first prototype will use :
 - Accutrim 1280G 1K trimmer
 - 2 SA404 banana plugs for direct connection to the 10V LTZ1000 Voltage Reference Standard
 - 2 Pomona 3750 binding posts for cable connection to the DMM
-- Low contact DPST switch M2021SS1W01
+- DPST switch M2021SS1W01 with low contact resistance
 
 
-The PCB is not yet produced tested. Waiting for parts and the PCB from OSHPark.
+The PCB is not yet produced and tested. Waiting for the PCB from OSHPark.
 
 Files:<br>
 hamon.kicad\_pcb - hamon divider PCB with 2 banana plugs (SA404) and 2 binding posts.<br>
