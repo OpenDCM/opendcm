@@ -21,8 +21,46 @@ Hamon\_calc.ods - spreadsheet for resistor calculation.<br>
 
 
 Preliminary test:
+
+Input 10V LTZ1000 based voltage reference.
+Output 1V
+Ratio 1:10 -> 0.1
+
 Setup with Advantest R6581T:
 <img src="images/r6581t_setup.png" alt="Setup with R6581T"/>
 
 Setup with HP 34401A:
 <img src="images/hp34401_ratio.JPG" alt="Setup with HP 34401A"/>
+
+Test with 50 samples (50 samples x 8 sec = 400 sec.) for noise:
+
+STDEV = 0.000 000 012
+
+<img src="images/50_samples_stdev.JPG" alt="stdev 50 samples"/>
+
+Min-Max value = 0.000 000 061
+
+<img src="images/50_samples_p2p.JPG" alt="p2p 50 samples"/>
+
+Average value = 0.100 000 014
+
+<img src="images/50_samples_average.JPG" alt="average 50 samples"/>
+
+Test with 450 samples for stability:
+
+450 samples - 1 hour. Temp 21.6 - 22.1 C, 39-42 % RH
+
+<img src="images/450_samples.JPG" alt="450 samples"/>
+
+STDEV = 0.000 000 015
+
+<img src="images/450_samples_stdev.JPG" alt="stdev 450 samples"/>
+
+Min-Max value = 0.000 000 086
+
+<img src="images/450_samples_p2p.JPG" alt="p2p 50 samples"/>
+
+Average value = 0.100 000 035
+
+<img src="images/450_samples_average.JPG" alt="average 50 samples"/>
+
