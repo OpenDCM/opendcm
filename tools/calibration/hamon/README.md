@@ -15,13 +15,14 @@ hamon.kicad\_pcb - hamon divider PCB with 2 banana plugs (SA404) and 2 binding p
 hamon\_bp.kicad\_pcb - hamon divider PCB with 4 binding posts.<br>
 Hamon\_calc.ods - spreadsheet for resistor calculation.<br>
 
-<img src="hamon_front.JPG" alt="Front image"/>
-<img src="hamon_back.JPG" alt="Back image"/>
-<img src="hamon-3d.JPG" alt=""/>
+<img src="images/hamon_front.JPG" alt="Front image"/>
+<img src="images/hamon_back.JPG" alt="Back image"/>
+<img src="images/hamon-3d.JPG" alt=""/>
 
 
 Preliminary test:
 Setup with Advantest R6581T:
-<img src="images/r6581t_setup.JPG" alt="Setup with R6581T"/>
+<img src="images/r6581t_setup.png" alt="Setup with R6581T"/>
+
 Setup with HP 34401A:
 <img src="images/hp34401_ratio.JPG" alt="Setup with HP 34401A"/>
