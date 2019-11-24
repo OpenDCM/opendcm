@@ -15,6 +15,7 @@ hamon.kicad\_pcb - hamon divider PCB with 2 banana plugs (SA404) and 2 binding p
 hamon\_bp.kicad\_pcb - hamon divider PCB with 4 binding posts.<br>
 Hamon\_calc.ods - spreadsheet for resistor calculation.<br>
 
+Images of the prototype:
 <img src="images/hamon_front.JPG" alt="Front image"/>
 <img src="images/hamon_back.JPG" alt="Back image"/>
 <img src="images/hamon-3d.JPG" alt=""/>
@@ -35,32 +36,20 @@ Setup with HP 34401A:
 Test with 50 samples (50 samples x 8 sec = 400 sec.) for noise:
 
 STDEV = 0.000 000 012
-
 <img src="images/50_samples_stdev.JPG" alt="stdev 50 samples"/>
-
 Min-Max value = 0.000 000 061
-
 <img src="images/50_samples_p2p.JPG" alt="p2p 50 samples"/>
-
 Average value = 0.100 000 014
-
 <img src="images/50_samples_average.JPG" alt="average 50 samples"/>
 
 Test with 450 samples for stability:
 
 450 samples - 1 hour. Temp 21.6 - 22.1 C, 39-42 % RH
-
 <img src="images/450_samples.JPG" alt="450 samples"/>
-
 STDEV = 0.000 000 015
-
 <img src="images/450_samples_stdev.JPG" alt="stdev 450 samples"/>
-
 Min-Max value = 0.000 000 086
-
 <img src="images/450_samples_p2p.JPG" alt="p2p 50 samples"/>
-
 Average value = 0.100 000 035
-
 <img src="images/450_samples_average.JPG" alt="average 50 samples"/>
 
