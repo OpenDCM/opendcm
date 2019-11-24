@@ -10,10 +10,18 @@ The first prototype will use :
 - 2 Pomona 3750 binding posts for cable connection to the DMM
 - DPST switch M2021SS1W01 with low contact resistance
 
-
-The PCB is not yet produced and tested. Waiting for the PCB from OSHPark.
-
 Files:<br>
 hamon.kicad\_pcb - hamon divider PCB with 2 banana plugs (SA404) and 2 binding posts.<br>
 hamon\_bp.kicad\_pcb - hamon divider PCB with 4 binding posts.<br>
 Hamon\_calc.ods - spreadsheet for resistor calculation.<br>
+
+<img src="hamon_front.JPG" alt="Front image"/>
+<img src="hamon_back.JPG" alt="Back image"/>
+<img src="hamon-3d.JPG" alt=""/>
+
+
+Preliminary test:
+Setup with Advantest R6581T:
+<img src="images/r6581t_setup.JPG" alt="Setup with R6581T"/>
+Setup with HP 34401A:
+<img src="images/hp34401_ratio.JPG" alt="Setup with HP 34401A"/>
