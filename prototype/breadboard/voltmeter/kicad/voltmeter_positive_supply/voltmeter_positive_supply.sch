@@ -1,35 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:opendcm
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -44,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LTC2440 U2
+L opendcm:LTC2440 U2
 U 1 1 5702A8B9
 P 6500 4300
 F 0 "U2" H 6500 4750 60  0000 C CNN
@@ -55,7 +25,7 @@ F 3 "" H 6500 4300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR11
+L opendcm:+5V #PWR11
 U 1 1 5702A945
 P 5800 3250
 F 0 "#PWR11" H 5800 3100 50  0001 C CNN
@@ -66,7 +36,7 @@ F 3 "" H 5800 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR16
+L opendcm:GND #PWR16
 U 1 1 5702A95F
 P 7000 3550
 F 0 "#PWR16" H 7000 3300 50  0001 C CNN
@@ -77,7 +47,7 @@ F 3 "" H 7000 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR14
+L opendcm:GND #PWR14
 U 1 1 5702A986
 P 6350 4950
 F 0 "#PWR14" H 6350 4700 50  0001 C CNN
@@ -88,7 +58,7 @@ F 3 "" H 6350 4950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR6
+L opendcm:GND #PWR6
 U 1 1 5702A99C
 P 4300 2900
 F 0 "#PWR6" H 4300 2650 50  0001 C CNN
@@ -99,7 +69,7 @@ F 3 "" H 4300 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LTC6655 U1
+L opendcm:LTC6655 U1
 U 1 1 5702AAD1
 P 4550 2300
 F 0 "U1" H 4250 2650 60  0000 C CNN
@@ -110,7 +80,7 @@ F 3 "" H 4550 2300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR4
+L opendcm:+5V #PWR4
 U 1 1 5702B42B
 P 3800 1900
 F 0 "#PWR4" H 3800 1750 50  0001 C CNN
@@ -121,7 +91,7 @@ F 3 "" H 3800 1900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR12
+L opendcm:+5V #PWR12
 U 1 1 5702B4EB
 P 5850 4600
 F 0 "#PWR12" H 5850 4450 50  0001 C CNN
@@ -132,7 +102,7 @@ F 3 "" H 5850 4600 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR15
+L opendcm:GND #PWR15
 U 1 1 5702B529
 P 6650 4950
 F 0 "#PWR15" H 6650 4700 50  0001 C CNN
@@ -143,7 +113,7 @@ F 3 "" H 6650 4950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR9
+L opendcm:GND #PWR9
 U 1 1 5702B53A
 P 5450 4600
 F 0 "#PWR9" H 5450 4350 50  0001 C CNN
@@ -154,7 +124,7 @@ F 3 "" H 5450 4600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LTC2052 U3
+L opendcm:LTC2052 U3
 U 1 1 5702B6A8
 P 3150 3950
 F 0 "U3" H 3550 3400 60  0000 C CNN
@@ -165,18 +135,18 @@ F 3 "" H 3150 3950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L opendcm:C C2
 U 1 1 5702B787
-P 5100 4450
-F 0 "C2" H 5125 4550 50  0000 L CNN
-F 1 "1uF" H 5125 4350 50  0000 L CNN
-F 2 "" H 5138 4300 50  0000 C CNN
-F 3 "" H 5100 4450 50  0000 C CNN
-	1    5100 4450
+P 5100 4480
+F 0 "C2" H 5125 4580 50  0000 L CNN
+F 1 "1uF" H 5125 4380 50  0000 L CNN
+F 2 "" H 5138 4330 50  0000 C CNN
+F 3 "" H 5100 4480 50  0000 C CNN
+	1    5100 4480
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR8
+L opendcm:GND #PWR8
 U 1 1 5702B811
 P 5100 4600
 F 0 "#PWR8" H 5100 4350 50  0001 C CNN
@@ -187,7 +157,7 @@ F 3 "" H 5100 4600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L opendcm:R R1
 U 1 1 5702B91F
 P 4500 4000
 F 0 "R1" V 4580 4000 50  0000 C CNN
@@ -198,7 +168,7 @@ F 3 "" H 4500 4000 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R2
+L opendcm:R R2
 U 1 1 5702B97C
 P 4500 4300
 F 0 "R2" V 4580 4300 50  0000 C CNN
@@ -209,18 +179,18 @@ F 3 "" H 4500 4300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C1
+L opendcm:C C1
 U 1 1 5702B9B2
-P 4100 4150
-F 0 "C1" H 4125 4250 50  0000 L CNN
-F 1 "10nF" H 4125 4050 50  0000 L CNN
-F 2 "" H 4138 4000 50  0000 C CNN
-F 3 "" H 4100 4150 50  0000 C CNN
-	1    4100 4150
+P 4100 4175
+F 0 "C1" H 4125 4275 50  0000 L CNN
+F 1 "10nF" H 4125 4075 50  0000 L CNN
+F 2 "" H 4138 4025 50  0000 C CNN
+F 3 "" H 4100 4175 50  0000 C CNN
+	1    4100 4175
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR2
+L opendcm:GND #PWR2
 U 1 1 5702BF28
 P 3350 4600
 F 0 "#PWR2" H 3350 4350 50  0001 C CNN
@@ -231,7 +201,7 @@ F 3 "" H 3350 4600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR1
+L opendcm:+5V #PWR1
 U 1 1 5702BF48
 P 3350 3700
 F 0 "#PWR1" H 3350 3550 50  0001 C CNN
@@ -242,7 +212,7 @@ F 3 "" H 3350 3700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR18
+L opendcm:GND #PWR18
 U 1 1 5702C38E
 P 7400 4100
 F 0 "#PWR18" H 7400 3850 50  0001 C CNN
@@ -253,7 +223,7 @@ F 3 "" H 7400 4100 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR17
+L opendcm:GND #PWR17
 U 1 1 5702C42A
 P 7000 4600
 F 0 "#PWR17" H 7000 4350 50  0001 C CNN
@@ -268,29 +238,29 @@ uController
 Text Notes 2800 2150 0    60   ~ 0
 Use low noise LDO \nfor power supply\nof Vref 
 $Comp
-L C C3
+L opendcm:C C3
 U 1 1 5702B4B3
-P 4050 2400
-F 0 "C3" H 4075 2500 50  0000 L CNN
-F 1 "0.1uF" H 4075 2300 50  0000 L CNN
-F 2 "" H 4088 2250 50  0000 C CNN
-F 3 "" H 4050 2400 50  0000 C CNN
-	1    4050 2400
+P 4050 2425
+F 0 "C3" H 4075 2525 50  0000 L CNN
+F 1 "0.1uF" H 4075 2325 50  0000 L CNN
+F 2 "" H 4088 2275 50  0000 C CNN
+F 3 "" H 4050 2425 50  0000 C CNN
+	1    4050 2425
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L opendcm:C C4
 U 1 1 5702B4F9
-P 5050 2400
-F 0 "C4" H 5075 2500 50  0000 L CNN
-F 1 "10uF" H 5075 2300 50  0000 L CNN
-F 2 "" H 5088 2250 50  0000 C CNN
-F 3 "" H 5050 2400 50  0000 C CNN
-	1    5050 2400
+P 5050 2425
+F 0 "C4" H 5075 2525 50  0000 L CNN
+F 1 "10uF" H 5075 2325 50  0000 L CNN
+F 2 "" H 5088 2275 50  0000 C CNN
+F 3 "" H 5050 2425 50  0000 C CNN
+	1    5050 2425
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR5
+L opendcm:GND #PWR5
 U 1 1 5702B771
 P 4050 2550
 F 0 "#PWR5" H 4050 2300 50  0001 C CNN
@@ -301,7 +271,7 @@ F 3 "" H 4050 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR7
+L opendcm:GND #PWR7
 U 1 1 5702B797
 P 5050 2550
 F 0 "#PWR7" H 5050 2300 50  0001 C CNN
@@ -312,18 +282,18 @@ F 3 "" H 5050 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C5
+L opendcm:C C5
 U 1 1 5702BBBC
-P 5600 3600
-F 0 "C5" H 5625 3700 50  0000 L CNN
-F 1 "10uF" H 5625 3500 50  0000 L CNN
-F 2 "" H 5638 3450 50  0000 C CNN
-F 3 "" H 5600 3600 50  0000 C CNN
-	1    5600 3600
+P 5600 3625
+F 0 "C5" H 5625 3725 50  0000 L CNN
+F 1 "10uF" H 5625 3525 50  0000 L CNN
+F 2 "" H 5638 3475 50  0000 C CNN
+F 3 "" H 5600 3625 50  0000 C CNN
+	1    5600 3625
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR10
+L opendcm:GND #PWR10
 U 1 1 5702BCE0
 P 5600 3750
 F 0 "#PWR10" H 5600 3500 50  0001 C CNN
@@ -334,18 +304,18 @@ F 3 "" H 5600 3750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C6
+L opendcm:C C6
 U 1 1 5702C00D
-P 5950 3600
-F 0 "C6" H 5975 3700 50  0000 L CNN
-F 1 "0.1uF" H 5975 3500 50  0000 L CNN
-F 2 "" H 5988 3450 50  0000 C CNN
-F 3 "" H 5950 3600 50  0000 C CNN
-	1    5950 3600
+P 5950 3620
+F 0 "C6" H 5975 3720 50  0000 L CNN
+F 1 "0.1uF" H 5975 3520 50  0000 L CNN
+F 2 "" H 5988 3470 50  0000 C CNN
+F 3 "" H 5950 3620 50  0000 C CNN
+	1    5950 3620
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR13
+L opendcm:GND #PWR13
 U 1 1 5702C054
 P 5950 3750
 F 0 "#PWR13" H 5950 3500 50  0001 C CNN
@@ -358,28 +328,22 @@ $EndComp
 Wire Wire Line
 	6350 3550 6350 3450
 Wire Wire Line
-	6350 3450 7000 3450
+	6350 3450 6650 3450
 Wire Wire Line
 	7000 3450 7000 3550
 Wire Wire Line
 	6650 3550 6650 3450
 Connection ~ 6650 3450
 Wire Wire Line
-	4300 2750 4800 2750
-Connection ~ 4450 2750
-Connection ~ 4650 2750
-Connection ~ 4300 2750
-Wire Wire Line
 	4050 2100 4050 2250
 Wire Wire Line
 	3800 1900 3800 2250
 Wire Wire Line
 	3800 2250 4050 2250
-Connection ~ 4050 2250
 Wire Wire Line
 	5850 4500 6050 4500
 Wire Wire Line
-	4650 4300 6050 4300
+	4650 4300 4800 4300
 Wire Wire Line
 	5850 4600 5850 4500
 Wire Wire Line
@@ -387,21 +351,14 @@ Wire Wire Line
 Wire Wire Line
 	4800 4000 4800 4300
 Connection ~ 4800 4300
-Connection ~ 5100 4300
-Wire Wire Line
-	3750 4300 4350 4300
-Connection ~ 4100 4300
 Wire Wire Line
 	2850 4200 2950 4200
 Wire Wire Line
 	2850 3500 2850 4200
-Connection ~ 4100 4000
 Wire Wire Line
 	2950 4400 2400 4400
 Wire Wire Line
 	2850 3500 4100 3500
-Wire Wire Line
-	4100 3500 4100 4000
 Wire Wire Line
 	4100 4000 4350 4000
 Wire Wire Line
@@ -425,71 +382,145 @@ Wire Wire Line
 Wire Wire Line
 	4300 2750 4300 2900
 Wire Wire Line
-	5600 3350 5950 3350
-Wire Wire Line
-	5600 3350 5600 3450
+	5600 3350 5800 3350
 Connection ~ 5800 3350
 Wire Wire Line
 	5800 4000 6050 4000
 Wire Wire Line
-	5800 3250 5800 4000
-Wire Wire Line
-	5950 3350 5950 3450
+	5800 3250 5800 3350
 Wire Wire Line
 	6050 4200 5450 4200
 Wire Wire Line
-	5450 4200 5450 4600
+	5450 4200 5450 4400
 Wire Wire Line
 	6050 4400 5450 4400
 Connection ~ 5450 4400
 Wire Wire Line
-	3350 3700 3350 4000
+	3350 3700 3350 3750
 $Comp
-L C C7
+L opendcm:C C7
 U 1 1 5702D014
-P 3550 3900
-F 0 "C7" H 3575 4000 50  0000 L CNN
-F 1 "1uF" H 3575 3800 50  0000 L CNN
-F 2 "" H 3588 3750 50  0000 C CNN
-F 3 "" H 3550 3900 50  0000 C CNN
-	1    3550 3900
+P 3550 3930
+F 0 "C7" H 3575 4030 50  0000 L CNN
+F 1 "1uF" H 3575 3880 50  0000 L CNN
+F 2 "" H 3588 3780 50  0000 C CNN
+F 3 "" H 3550 3930 50  0000 C CNN
+	1    3550 3930
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C8
+L opendcm:C C8
 U 1 1 5702D05C
-P 3850 3900
-F 0 "C8" H 3875 4000 50  0000 L CNN
-F 1 "0.1uF" H 3875 3800 50  0000 L CNN
-F 2 "" H 3888 3750 50  0000 C CNN
-F 3 "" H 3850 3900 50  0000 C CNN
-	1    3850 3900
+P 3850 3930
+F 0 "C8" H 3875 4030 50  0000 L CNN
+F 1 "0.1uF" H 3875 3880 50  0000 L CNN
+F 2 "" H 3888 3780 50  0000 C CNN
+F 3 "" H 3850 3930 50  0000 C CNN
+	1    3850 3930
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR3
+L opendcm:GND #PWR3
 U 1 1 5702D0BD
 P 3700 4100
 F 0 "#PWR3" H 3700 3850 50  0001 C CNN
-F 1 "GND" H 3700 3950 50  0000 C CNN
+F 1 "GND" H 3850 4015 50  0000 C CNN
 F 2 "" H 3700 4100 50  0000 C CNN
 F 3 "" H 3700 4100 50  0000 C CNN
 	1    3700 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 4050 3850 4050
+	3550 4050 3700 4050
 Wire Wire Line
 	3700 4100 3700 4050
 Connection ~ 3700 4050
-Wire Wire Line
-	3350 3750 3850 3750
 Connection ~ 3350 3750
-Connection ~ 3550 3750
 Wire Wire Line
 	7000 4600 7000 4500
 Wire Wire Line
 	7000 4500 6950 4500
-Text Notes 2100 4300 0    60   ~ 0
-Input Voltage
+Text Notes 2050 4390 2    60   ~ 0
+Input Voltage 0-5V Max
+Wire Wire Line
+	6650 3450 7000 3450
+Wire Wire Line
+	5800 3350 5950 3350
+Wire Wire Line
+	5800 3350 5800 4000
+Wire Wire Line
+	5450 4400 5450 4600
+Wire Wire Line
+	3700 4050 3850 4050
+Wire Wire Line
+	3350 3750 3350 4000
+Wire Wire Line
+	3750 4300 4100 4300
+Wire Wire Line
+	3350 3750 3550 3750
+Wire Wire Line
+	4300 2750 4800 2750
+Wire Wire Line
+	4800 4300 5100 4300
+Wire Wire Line
+	3550 3780 3550 3750
+Connection ~ 3550 3750
+Wire Wire Line
+	3550 3750 3850 3750
+Wire Wire Line
+	3550 4050 3550 4030
+Wire Wire Line
+	3850 4050 3850 4030
+Wire Wire Line
+	3850 3750 3850 3780
+Wire Wire Line
+	4100 4275 4100 4300
+Connection ~ 4100 4300
+Wire Wire Line
+	4100 4300 4350 4300
+Wire Wire Line
+	4100 3500 4100 4000
+Connection ~ 4100 4000
+Wire Wire Line
+	4100 4000 4100 4025
+Wire Wire Line
+	5100 4600 5100 4580
+Wire Wire Line
+	5100 4330 5100 4300
+Connection ~ 5100 4300
+Wire Wire Line
+	5100 4300 6050 4300
+Wire Wire Line
+	5600 3350 5600 3475
+Wire Wire Line
+	5600 3725 5600 3750
+Wire Wire Line
+	5950 3350 5950 3470
+Wire Wire Line
+	5950 3720 5950 3750
+Wire Wire Line
+	5050 2250 5050 2275
+Connection ~ 5050 2250
+Wire Wire Line
+	5050 2525 5050 2550
+Wire Wire Line
+	4050 2275 4050 2250
+Connection ~ 4050 2250
+Wire Wire Line
+	4050 2525 4050 2550
+$Comp
+L opendcm:GND #PWR?
+U 1 1 5F10A011
+P 2570 4595
+F 0 "#PWR?" H 2570 4345 50  0001 C CNN
+F 1 "GND" H 2570 4445 50  0000 C CNN
+F 2 "" H 2570 4595 50  0000 C CNN
+F 3 "" H 2570 4595 50  0000 C CNN
+	1    2570 4595
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2570 4595 2570 4520
+Wire Wire Line
+	2570 4520 2405 4520
 $EndSCHEMATC
